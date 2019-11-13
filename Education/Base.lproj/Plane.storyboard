@@ -168,11 +168,6 @@
                                 <rect key="frame" x="0.0" y="-60" width="414" height="1014"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nf-Z5-CXu">
-                                <rect key="frame" x="10" y="-50" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0N-mt-bzX">
                                 <rect key="frame" x="117" y="368" width="232" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -295,6 +290,9 @@
                                 <rect key="frame" x="124" y="268" width="209" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Risorsa 21"/>
+                                <connections>
+                                    <segue destination="sFT-zT-Ijm" kind="modal" modalPresentationStyle="fullScreen" id="lYC-BQ-jHm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -325,6 +323,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="db3-mn-Y7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1399" y="-24"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="qV6-AP-VlS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="sFT-zT-Ijm" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V69-ch-PYR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2022" y="-43"/>
         </scene>
     </scenes>
     <resources>

@@ -22,6 +22,7 @@ class DragAndDrop1: UIViewController {
         // Do any additional setup after loading the view.
         Button.isHidden = true
         Button.isEnabled = false
+       
     }
     
     
@@ -50,24 +51,24 @@ class DragAndDrop1: UIViewController {
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)
-            if (confronto(Quadrato: Quadrato, Immagine: Immagine) && confronto(Quadrato: Triangolo, Immagine: TraingoloSotto) && confronto(Quadrato: Cerchio, Immagine: CerchioSotto)){
-                Button.isEnabled = true
+            if Immagine.isHighlighted == true && TraingoloSotto.isHighlighted == true && CerchioSotto.isHighlighted == true {
                 Button.isHidden = false
-                
+                Button.isEnabled = true
             }
         }
             
 }
    
     
-    func confronto(Quadrato : UIImageView, Immagine : UIImageView) -> Bool{
+    func confronto(Quadrato : UIImageView, Immagine : UIImageView)
+    {
         if Quadrato.frame.contains(Immagine.frame){
          
             Immagine.frame = Quadrato.frame
             Immagine.center = Quadrato.center
             Immagine.isHighlighted = true
             Immagine.isAccessibilityElement = false
-            return true
+            
         }
 }
 }

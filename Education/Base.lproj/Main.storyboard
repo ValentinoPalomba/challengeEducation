@@ -16,11 +16,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tJf-dk-KNw">
-                                <rect key="frame" x="234" y="420" width="46" height="72"/>
+                                <rect key="frame" x="271" y="412" width="123" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Gyroscope"/>
                                 <connections>
-                                    <segue destination="q7F-3b-ymu" kind="show" id="ReT-E9-he1"/>
+                                    <segue destination="q7F-3b-ymu" kind="modal" modalPresentationStyle="fullScreen" id="ReT-E9-he1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttj-ya-Oub">
+                                <rect key="frame" x="20" y="395" width="130" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Drag And Drop"/>
+                                <connections>
+                                    <segue destination="r8U-WF-xCX" kind="modal" modalPresentationStyle="fullScreen" id="2ra-5i-bBi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +49,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BkU-kR-pSv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="138"/>
+        </scene>
+        <!--DragAndDRop-->
+        <scene sceneID="Bem-8m-z3e">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DragAndDRop" id="r8U-WF-xCX" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="fny-we-h31"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4i-b8-gbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="218"/>
         </scene>
     </scenes>
 </document>

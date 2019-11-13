@@ -43,7 +43,7 @@
                                 <rect key="frame" x="95" y="411" width="152" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
                                 <rect key="frame" x="60" y="670" width="299" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
@@ -51,12 +51,17 @@
                                     <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-Tv-fVb">
+                                <rect key="frame" x="70" y="680" width="299" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Button" destination="nbf-Dv-Y3R" id="gDB-6l-YrY"/>
+                        <outlet property="Button" destination="Jk3-Tv-fVb" id="z2k-ea-xCU"/>
                         <outlet property="Cerchio" destination="Q62-7h-MaR" id="y3u-M5-qCn"/>
                         <outlet property="CerchioSotto" destination="EEa-uO-Jr3" id="Ri2-mo-vad"/>
                         <outlet property="Immagine" destination="W48-lO-FEm" id="QJk-Qq-nei"/>
@@ -105,11 +110,20 @@
                                 <rect key="frame" x="277" y="714" width="82" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
+                                <rect key="frame" x="66" y="664" width="299" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                                <connections>
+                                    <segue destination="Ds4-jf-8P0" kind="modal" modalPresentationStyle="fullScreen" id="SdK-Ga-IgC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="LLp-Wm-oou"/>
                     </view>
                     <connections>
+                        <outlet property="Button" destination="6eN-VI-1T1" id="RMX-gq-jct"/>
                         <outlet property="Cerchio" destination="vRh-Ob-xAu" id="S83-zF-ct8"/>
                         <outlet property="CerchioSotto" destination="k0V-gJ-NHW" id="vBP-Vw-clL"/>
                         <outlet property="Immagine" destination="Agc-Rp-Vrq" id="qfE-vI-OPX"/>
@@ -121,6 +135,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XbU-me-xvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="966.66666666666674" y="137.94642857142856"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="xqi-Pg-WI2">
+            <objects>
+                <viewControllerPlaceholder id="Ds4-jf-8P0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2et-hh-szi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="138"/>
         </scene>
     </scenes>
     <resources>
