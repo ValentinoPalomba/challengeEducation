@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Drag And Drop-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DragAndDrop" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beach1 bg_Tavola disegno 1 copia 2" translatesAutoresizingMaskIntoConstraints="NO" id="dYZ-ka-8Ae">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 3" highlightedImage="Risorsa 6" translatesAutoresizingMaskIntoConstraints="NO" id="W48-lO-FEm">
+                                <rect key="frame" x="60" y="717" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 4-2" highlightedImage="Risorsa 8" translatesAutoresizingMaskIntoConstraints="NO" id="EEa-uO-Jr3">
+                                <rect key="frame" x="159" y="717" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ncF-I2-fEg">
+                                <rect key="frame" x="231" y="228" width="152" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 5" highlightedImage="Risorsa 7" translatesAutoresizingMaskIntoConstraints="NO" id="Omf-cQ-Unn">
+                                <rect key="frame" x="263" y="717" width="96" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sui-7z-p7J">
+                                <rect key="frame" x="60" y="145" width="134" height="139"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q62-7h-MaR">
+                                <rect key="frame" x="95" y="411" width="152" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="Cerchio" destination="Q62-7h-MaR" id="y3u-M5-qCn"/>
+                        <outlet property="CerchioSotto" destination="EEa-uO-Jr3" id="Ri2-mo-vad"/>
+                        <outlet property="Immagine" destination="W48-lO-FEm" id="QJk-Qq-nei"/>
+                        <outlet property="Quadrato" destination="Sui-7z-p7J" id="1Jw-fh-MAf"/>
+                        <outlet property="TraingoloSotto" destination="Omf-cQ-Unn" id="EmO-JO-5Y9"/>
+                        <outlet property="Triangolo" destination="ncF-I2-fEg" id="9bx-Co-fUT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Risorsa 3" width="264" height="307"/>
+        <image name="Risorsa 4-2" width="264" height="294"/>
+        <image name="Risorsa 5" width="296" height="275"/>
+        <image name="Risorsa 6" width="431" height="517"/>
+        <image name="Risorsa 7" width="490" height="447"/>
+        <image name="Risorsa 8" width="430" height="491"/>
+        <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
+    </resources>
+</document>
