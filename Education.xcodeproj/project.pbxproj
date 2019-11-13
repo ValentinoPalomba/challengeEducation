@@ -19,6 +19,7 @@
 		665F534D237990AE0012D952 /* ViewControllerCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F534A237990AE0012D952 /* ViewControllerCar.swift */; };
 		757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */; };
 		757AAD5F237BFB3700FEC112 /* DragAndDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */; };
+		757AAD61237BFE8F00FEC112 /* DragAndDrop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		665F534A237990AE0012D952 /* ViewControllerCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCar.swift; sourceTree = "<group>"; };
 		757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DragAndDRop.storyboard; sourceTree = "<group>"; };
 		757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDrop.swift; sourceTree = "<group>"; };
+		757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDrop2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				665F5349237990AE0012D952 /* ViewControllerBoat.swift */,
 				665F534A237990AE0012D952 /* ViewControllerCar.swift */,
 				757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */,
+				757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */,
 				665F533723798AC10012D952 /* Main.storyboard */,
 				665F534523798DBA0012D952 /* Plane.storyboard */,
 				757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */,
@@ -163,6 +166,7 @@
 				665F534C237990AE0012D952 /* ViewControllerBoat.swift in Sources */,
 				665F534B237990AE0012D952 /* ViewControllerPlane.swift in Sources */,
 				665F533223798AC10012D952 /* AppDelegate.swift in Sources */,
+				757AAD61237BFE8F00FEC112 /* DragAndDrop2.swift in Sources */,
 				665F534D237990AE0012D952 /* ViewControllerCar.swift in Sources */,
 				665F533423798AC10012D952 /* SceneDelegate.swift in Sources */,
 			);
@@ -317,7 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38FB2UBLHQ;
+				DEVELOPMENT_TEAM = 6JY969UVJY;
 				INFOPLIST_FILE = Education/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -336,7 +340,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 38FB2UBLHQ;
+				DEVELOPMENT_TEAM = 6JY969UVJY;
 				INFOPLIST_FILE = Education/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

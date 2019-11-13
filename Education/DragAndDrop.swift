@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DragAndDrop: UIViewController {
+class DragAndDrop1: UIViewController {
 
     @IBOutlet weak var Cerchio: UIImageView!
     @IBOutlet weak var Triangolo: UIImageView!
@@ -16,9 +16,12 @@ class DragAndDrop: UIViewController {
     @IBOutlet weak var TraingoloSotto: UIImageView!
     @IBOutlet weak var Quadrato: UIImageView!
     @IBOutlet weak var Immagine: UIImageView!
+    @IBOutlet weak var Button: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        Button.isHidden = true
+        Button.isEnabled = false
     }
     
     
@@ -47,19 +50,24 @@ class DragAndDrop: UIViewController {
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)
+            if (confronto(Quadrato: Quadrato, Immagine: Immagine) && confronto(Quadrato: Triangolo, Immagine: TraingoloSotto) && confronto(Quadrato: Cerchio, Immagine: CerchioSotto)){
+                Button.isEnabled = true
+                Button.isHidden = false
+                
+            }
         }
             
 }
    
     
-    func confronto(Quadrato : UIImageView, Immagine : UIImageView){
+    func confronto(Quadrato : UIImageView, Immagine : UIImageView) -> Bool{
         if Quadrato.frame.contains(Immagine.frame){
          
             Immagine.frame = Quadrato.frame
             Immagine.center = Quadrato.center
             Immagine.isHighlighted = true
             Immagine.isAccessibilityElement = false
-            
+            return true
         }
 }
 }
