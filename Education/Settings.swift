@@ -6,7 +6,8 @@
 //  Copyright © 2019 Marius Minia. All rights reserved.
 //
 
-//import Foundation
-//class settings : UIViewController {
-//    
-//}
+import Foundation
+import UIKit
+class settings : UIViewController {
+    
+}

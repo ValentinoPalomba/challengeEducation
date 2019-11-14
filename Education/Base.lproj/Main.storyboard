@@ -43,7 +43,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Gyroscope"/>
                                 <connections>
-                                    <segue destination="q7F-3b-ymu" kind="show" id="ReT-E9-he1"/>
+                                    <segue destination="q7F-3b-ymu" kind="presentation" modalPresentationStyle="fullScreen" id="ReT-E9-he1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfZ-Dr-32n">
+                                <rect key="frame" x="153" y="533" width="109" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DrawPad"/>
+                                <connections>
+                                    <segue destination="MoG-kH-h7c" kind="modal" modalPresentationStyle="fullScreen" id="i7E-KZ-GXS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -74,6 +82,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4i-b8-gbZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="764" y="218"/>
+        </scene>
+        <!--DrawPad-->
+        <scene sceneID="dfp-ah-z4K">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DrawPad" id="MoG-kH-h7c" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ElU-M5-0ye"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqx-i9-Ns0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="632" y="331"/>
         </scene>
     </scenes>
 </document>
