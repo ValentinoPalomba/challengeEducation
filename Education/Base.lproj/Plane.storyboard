@@ -12,7 +12,7 @@
             <objects>
                 <viewController id="rQh-7L-VbS" customClass="ViewController2" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YUm-0d-mjJ" userLabel="View2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mare bg-5" translatesAutoresizingMaskIntoConstraints="NO" id="5td-8a-6tB">
@@ -72,7 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="c4x-1Q-yo5" kind="modal" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
+                                    <segue destination="c4x-1Q-yo5" kind="show" id="rQ2-Xa-1dz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -178,7 +178,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="rQh-7L-VbS" kind="modal" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
+                                    <segue destination="rQh-7L-VbS" kind="show" id="U4w-qc-4lJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -212,7 +212,7 @@
             <objects>
                 <viewController id="c4x-1Q-yo5" customClass="ViewController3" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b7g-fH-99x">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BG" translatesAutoresizingMaskIntoConstraints="NO" id="tlN-cD-zvf">
@@ -300,6 +300,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="MuR-cq-EK8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="D1n-2e-hT4"/>
                     <connections>
                         <outlet property="Barrier1" destination="H4e-HC-R2n" id="fYS-Ye-r67"/>
                         <outlet property="Barrier2" destination="He0-Ws-Tq7" id="xfz-X5-JwO"/>
