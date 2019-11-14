@@ -17,12 +17,10 @@ class DragAndDrop1: UIViewController {
     @IBOutlet weak var Quadrato: UIImageView!
     @IBOutlet weak var Immagine: UIImageView!
     @IBOutlet weak var Button: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
         Button.isHidden = true
         Button.isEnabled = false
-       
     }
     
     
@@ -33,19 +31,24 @@ class DragAndDrop1: UIViewController {
             if Immagine.frame.contains(position) == true {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.Immagine.center = CGPoint(x: position.x, y: position.y)
+                    self.TraingoloSotto.isUserInteractionEnabled = false
+                    self.CerchioSotto.isUserInteractionEnabled = false
                     
                 })
             }
+            
             if CerchioSotto.frame.contains(position) == true {
                            UIView.animate(withDuration: 0.2, animations: {
                                self.CerchioSotto.center = CGPoint(x: position.x, y: position.y)
-                               
+                               self.TraingoloSotto.isUserInteractionEnabled = false
+                               self.Immagine.isUserInteractionEnabled = false
                            })
                 }
             if TraingoloSotto.frame.contains(position) == true {
                            UIView.animate(withDuration: 0.2, animations: {
                                self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
-                               
+                               self.CerchioSotto.isUserInteractionEnabled = false
+                               self.Immagine.isUserInteractionEnabled = false
                            })
                 }
             confronto(Quadrato: Quadrato, Immagine: Immagine)
@@ -68,6 +71,7 @@ class DragAndDrop1: UIViewController {
             Immagine.center = Quadrato.center
             Immagine.isHighlighted = true
             Immagine.isAccessibilityElement = false
+            Immagine.isUserInteractionEnabled = false
             
         }
 }

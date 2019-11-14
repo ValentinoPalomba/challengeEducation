@@ -68,11 +68,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-cX-0gg">
-                                <rect key="frame" x="69" y="258" width="330" height="298"/>
+                                <rect key="frame" x="102" y="367" width="232" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="c4x-1Q-yo5" kind="modal" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
+                                    <segue destination="c4x-1Q-yo5" kind="presentation" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahg-bP-DDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-223" y="-24"/>
+            <point key="canvasLocation" x="-223.18840579710147" y="-24.107142857142858"/>
         </scene>
         <!--View Controller 5years-->
         <scene sceneID="tne-QT-ifu">
@@ -173,7 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="rQh-7L-VbS" kind="modal" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
+                                    <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -283,15 +283,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 22" translatesAutoresizingMaskIntoConstraints="NO" id="jC1-es-8zR">
-                                <rect key="frame" x="-3" y="232" width="420" height="292"/>
+                                <rect key="frame" x="-29" y="249" width="472" height="344"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Bi-opc">
-                                <rect key="frame" x="124" y="268" width="209" height="203"/>
+                                <rect key="frame" x="101" y="341" width="232" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Risorsa 21"/>
                                 <connections>
-                                    <segue destination="sFT-zT-Ijm" kind="modal" modalPresentationStyle="fullScreen" id="lYC-BQ-jHm"/>
+                                    <segue destination="sFT-zT-Ijm" kind="presentation" modalPresentationStyle="fullScreen" id="lYC-BQ-jHm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="db3-mn-Y7z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1399" y="-24"/>
+            <point key="canvasLocation" x="1398.5507246376812" y="-24.107142857142858"/>
         </scene>
         <!--Main-->
         <scene sceneID="qV6-AP-VlS">

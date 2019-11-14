@@ -51,17 +51,12 @@
                                     <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-Tv-fVb">
-                                <rect key="frame" x="70" y="680" width="299" height="186"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Button" destination="Jk3-Tv-fVb" id="z2k-ea-xCU"/>
+                        <outlet property="Button" destination="nbf-Dv-Y3R" id="uPM-MI-v3Z"/>
                         <outlet property="Cerchio" destination="Q62-7h-MaR" id="y3u-M5-qCn"/>
                         <outlet property="CerchioSotto" destination="EEa-uO-Jr3" id="Ri2-mo-vad"/>
                         <outlet property="Immagine" destination="W48-lO-FEm" id="QJk-Qq-nei"/>
@@ -110,8 +105,8 @@
                                 <rect key="frame" x="277" y="714" width="82" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
-                                <rect key="frame" x="66" y="664" width="299" height="186"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
+                                <rect key="frame" x="60" y="664" width="299" height="186"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
