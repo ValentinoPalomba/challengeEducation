@@ -291,7 +291,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Risorsa 21"/>
                                 <connections>
-                                    <segue destination="sFT-zT-Ijm" kind="modal" modalPresentationStyle="fullScreen" id="lYC-BQ-jHm"/>
+                                    <segue destination="sFT-zT-Ijm" kind="show" id="fVl-Mp-oOs"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,7 +328,9 @@
         <!--Main-->
         <scene sceneID="qV6-AP-VlS">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="sFT-zT-Ijm" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Main" id="sFT-zT-Ijm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Btp-8f-sMw"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V69-ch-PYR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2022" y="-43"/>
