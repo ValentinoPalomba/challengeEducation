@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Drag And Drop-->
+        <!--Drag And Drop1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="DragAndDrop" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="DragAndDrop1" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,11 +43,25 @@
                                 <rect key="frame" x="95" y="411" width="152" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
+                                <rect key="frame" x="60" y="670" width="299" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                                <connections>
+                                    <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-Tv-fVb">
+                                <rect key="frame" x="70" y="680" width="299" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Button" destination="Jk3-Tv-fVb" id="z2k-ea-xCU"/>
                         <outlet property="Cerchio" destination="Q62-7h-MaR" id="y3u-M5-qCn"/>
                         <outlet property="CerchioSotto" destination="EEa-uO-Jr3" id="Ri2-mo-vad"/>
                         <outlet property="Immagine" destination="W48-lO-FEm" id="QJk-Qq-nei"/>
@@ -60,8 +74,85 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
+        <!--Drag And Drop2-->
+        <scene sceneID="Fax-T3-krm">
+            <objects>
+                <viewController id="N85-qv-gBL" customClass="DragAndDrop2" customModule="Education" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LIY-hg-Tay">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 18-100" translatesAutoresizingMaskIntoConstraints="NO" id="ahC-Ve-94K">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SQV-G6-DqG">
+                                <rect key="frame" x="92" y="99" width="124" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vRh-Ob-xAu">
+                                <rect key="frame" x="235" y="303" width="124" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xDI-fG-6jr">
+                                <rect key="frame" x="45" y="378" width="124" height="141"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 25" highlightedImage="Risorsa 22-1" translatesAutoresizingMaskIntoConstraints="NO" id="Agc-Rp-Vrq">
+                                <rect key="frame" x="66" y="714" width="82" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 23-1" highlightedImage="Risorsa 20-1" translatesAutoresizingMaskIntoConstraints="NO" id="k0V-gJ-NHW">
+                                <rect key="frame" x="166" y="714" width="82" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 24" highlightedImage="Risorsa 21-1" translatesAutoresizingMaskIntoConstraints="NO" id="cMG-o4-hiM">
+                                <rect key="frame" x="277" y="714" width="82" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
+                                <rect key="frame" x="66" y="664" width="299" height="186"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                                <connections>
+                                    <segue destination="Ds4-jf-8P0" kind="modal" modalPresentationStyle="fullScreen" id="SdK-Ga-IgC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LLp-Wm-oou"/>
+                    </view>
+                    <connections>
+                        <outlet property="Button" destination="6eN-VI-1T1" id="RMX-gq-jct"/>
+                        <outlet property="Cerchio" destination="vRh-Ob-xAu" id="S83-zF-ct8"/>
+                        <outlet property="CerchioSotto" destination="k0V-gJ-NHW" id="vBP-Vw-clL"/>
+                        <outlet property="Immagine" destination="Agc-Rp-Vrq" id="qfE-vI-OPX"/>
+                        <outlet property="Quadrato" destination="xDI-fG-6jr" id="Egy-Z7-teB"/>
+                        <outlet property="TraingoloSotto" destination="Agc-Rp-Vrq" id="TgF-6E-8dl"/>
+                        <outlet property="Triangolo" destination="SQV-G6-DqG" id="miZ-lb-oew"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XbU-me-xvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966.66666666666674" y="137.94642857142856"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="xqi-Pg-WI2">
+            <objects>
+                <viewControllerPlaceholder id="Ds4-jf-8P0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2et-hh-szi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747" y="138"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="Risorsa 18-100" width="1125" height="2436"/>
+        <image name="Risorsa 20-1" width="428" height="600"/>
+        <image name="Risorsa 21-1" width="455" height="596"/>
+        <image name="Risorsa 22-1" width="432" height="518"/>
+        <image name="Risorsa 23-1" width="267" height="354"/>
+        <image name="Risorsa 24" width="271" height="346"/>
+        <image name="Risorsa 25" width="286" height="336"/>
         <image name="Risorsa 3" width="264" height="307"/>
         <image name="Risorsa 4-2" width="264" height="294"/>
         <image name="Risorsa 5" width="296" height="275"/>
@@ -69,5 +160,6 @@
         <image name="Risorsa 7" width="490" height="447"/>
         <image name="Risorsa 8" width="430" height="491"/>
         <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
+        <image name="popup2" width="449" height="358"/>
     </resources>
 </document>
