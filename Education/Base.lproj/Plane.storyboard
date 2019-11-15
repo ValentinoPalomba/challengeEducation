@@ -73,11 +73,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-<<<<<<< HEAD
                                     <segue destination="c4x-1Q-yo5" kind="presentation" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
-=======
-                                    <segue destination="c4x-1Q-yo5" kind="show" id="rQ2-Xa-1dz"/>
->>>>>>> 3bbde765f31f2e458e2339d0487d9e402a5307ed
                                 </connections>
                             </button>
                         </subviews>
@@ -178,11 +174,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-<<<<<<< HEAD
                                     <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
-=======
-                                    <segue destination="rQh-7L-VbS" kind="show" id="U4w-qc-4lJ"/>
->>>>>>> 3bbde765f31f2e458e2339d0487d9e402a5307ed
                                 </connections>
                             </button>
                         </subviews>
@@ -301,11 +293,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Risorsa 21"/>
                                 <connections>
-<<<<<<< HEAD
                                     <segue destination="sFT-zT-Ijm" kind="presentation" modalPresentationStyle="fullScreen" id="lYC-BQ-jHm"/>
-=======
-                                    <segue destination="sFT-zT-Ijm" kind="show" id="fVl-Mp-oOs"/>
->>>>>>> 3bbde765f31f2e458e2339d0487d9e402a5307ed
                                 </connections>
                             </button>
                         </subviews>
