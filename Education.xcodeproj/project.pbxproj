@@ -17,12 +17,12 @@
 		665F534B237990AE0012D952 /* ViewControllerPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5348237990AE0012D952 /* ViewControllerPlane.swift */; };
 		665F534C237990AE0012D952 /* ViewControllerBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5349237990AE0012D952 /* ViewControllerBoat.swift */; };
 		665F534D237990AE0012D952 /* ViewControllerCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F534A237990AE0012D952 /* ViewControllerCar.swift */; };
+		66E6E5FE237E9CDD001DD14C /* DrawPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */; };
 		757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */; };
 		757AAD5F237BFB3700FEC112 /* DragAndDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */; };
 		757AAD61237BFE8F00FEC112 /* DragAndDrop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */; };
 		7597C438237D59470000AE68 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7597C437237D59470000AE68 /* Settings.swift */; };
 		75F3FC8F237DA285008C1930 /* DrawPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FC8E237DA285008C1930 /* DrawPad.swift */; };
-		75F3FC92237DA2F9008C1930 /* DrawPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F3FC90237DA2F9008C1930 /* DrawPad.storyboard */; };
 		75F3FC94237DA33D008C1930 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FC93237DA33D008C1930 /* Pencil.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,12 +39,12 @@
 		665F5348237990AE0012D952 /* ViewControllerPlane.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerPlane.swift; sourceTree = "<group>"; };
 		665F5349237990AE0012D952 /* ViewControllerBoat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBoat.swift; sourceTree = "<group>"; };
 		665F534A237990AE0012D952 /* ViewControllerCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCar.swift; sourceTree = "<group>"; };
+		66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrawPad.storyboard; sourceTree = "<group>"; };
 		757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DragAndDRop.storyboard; sourceTree = "<group>"; };
 		757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDrop.swift; sourceTree = "<group>"; };
 		757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDrop2.swift; sourceTree = "<group>"; };
 		7597C437237D59470000AE68 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		75F3FC8E237DA285008C1930 /* DrawPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPad.swift; sourceTree = "<group>"; };
-		75F3FC91237DA2F9008C1930 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/DrawPad_Materials/DrawPad_Starter copia/DrawPad/Base.lproj/DrawPad.storyboard"; sourceTree = "<group>"; };
 		75F3FC93237DA33D008C1930 /* Pencil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,8 +90,8 @@
 				757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */,
 				665F533723798AC10012D952 /* Main.storyboard */,
 				665F534523798DBA0012D952 /* Plane.storyboard */,
+				66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */,
 				757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */,
-				75F3FC90237DA2F9008C1930 /* DrawPad.storyboard */,
 				75F3FC8E237DA285008C1930 /* DrawPad.swift */,
 				665F533A23798AC40012D952 /* Assets.xcassets */,
 				665F533C23798AC40012D952 /* LaunchScreen.storyboard */,
@@ -158,7 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F3FC92237DA2F9008C1930 /* DrawPad.storyboard in Resources */,
+				66E6E5FE237E9CDD001DD14C /* DrawPad.storyboard in Resources */,
 				665F533E23798AC40012D952 /* LaunchScreen.storyboard in Resources */,
 				757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */,
 				665F533B23798AC40012D952 /* Assets.xcassets in Resources */,
@@ -213,14 +213,6 @@
 				665F534623798DBA0012D952 /* Base */,
 			);
 			name = Plane.storyboard;
-			sourceTree = "<group>";
-		};
-		75F3FC90237DA2F9008C1930 /* DrawPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75F3FC91237DA2F9008C1930 /* Base */,
-			);
-			name = DrawPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
