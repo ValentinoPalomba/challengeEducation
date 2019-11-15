@@ -18,6 +18,8 @@
 		665F534C237990AE0012D952 /* ViewControllerBoat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5349237990AE0012D952 /* ViewControllerBoat.swift */; };
 		665F534D237990AE0012D952 /* ViewControllerCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F534A237990AE0012D952 /* ViewControllerCar.swift */; };
 		66E6E5FE237E9CDD001DD14C /* DrawPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */; };
+		7521F246237EA94500A6A8B2 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7521F245237EA94500A6A8B2 /* Path.swift */; };
+		7521F248237EA9FA00A6A8B2 /* Path.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7521F247237EA9FA00A6A8B2 /* Path.storyboard */; };
 		757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */; };
 		757AAD5F237BFB3700FEC112 /* DragAndDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */; };
 		757AAD61237BFE8F00FEC112 /* DragAndDrop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */; };
@@ -40,6 +42,8 @@
 		665F5349237990AE0012D952 /* ViewControllerBoat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerBoat.swift; sourceTree = "<group>"; };
 		665F534A237990AE0012D952 /* ViewControllerCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCar.swift; sourceTree = "<group>"; };
 		66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DrawPad.storyboard; sourceTree = "<group>"; };
+		7521F245237EA94500A6A8B2 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		7521F247237EA9FA00A6A8B2 /* Path.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Path.storyboard; sourceTree = "<group>"; };
 		757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DragAndDRop.storyboard; sourceTree = "<group>"; };
 		757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDrop.swift; sourceTree = "<group>"; };
 		757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDrop2.swift; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 				665F533723798AC10012D952 /* Main.storyboard */,
 				665F534523798DBA0012D952 /* Plane.storyboard */,
 				66E6E5FD237E9CDD001DD14C /* DrawPad.storyboard */,
+				7521F245237EA94500A6A8B2 /* Path.swift */,
+				7521F247237EA9FA00A6A8B2 /* Path.storyboard */,
 				757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */,
 				75F3FC8E237DA285008C1930 /* DrawPad.swift */,
 				665F533A23798AC40012D952 /* Assets.xcassets */,
@@ -159,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66E6E5FE237E9CDD001DD14C /* DrawPad.storyboard in Resources */,
+				7521F248237EA9FA00A6A8B2 /* Path.storyboard in Resources */,
 				665F533E23798AC40012D952 /* LaunchScreen.storyboard in Resources */,
 				757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */,
 				665F533B23798AC40012D952 /* Assets.xcassets in Resources */,
@@ -184,6 +191,7 @@
 				7597C438237D59470000AE68 /* Settings.swift in Sources */,
 				665F534D237990AE0012D952 /* ViewControllerCar.swift in Sources */,
 				75F3FC94237DA33D008C1930 /* Pencil.swift in Sources */,
+				7521F246237EA94500A6A8B2 /* Path.swift in Sources */,
 				665F533423798AC10012D952 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

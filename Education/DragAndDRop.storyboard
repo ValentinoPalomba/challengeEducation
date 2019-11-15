@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
-                                <rect key="frame" x="60" y="670" width="299" height="186"/>
+                                <rect key="frame" x="213" y="661" width="170" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
@@ -106,7 +106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
-                                <rect key="frame" x="60" y="664" width="299" height="186"/>
+                                <rect key="frame" x="213" y="661" width="170" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
@@ -121,7 +121,7 @@
                         <outlet property="Button" destination="6eN-VI-1T1" id="RMX-gq-jct"/>
                         <outlet property="Cerchio" destination="vRh-Ob-xAu" id="S83-zF-ct8"/>
                         <outlet property="CerchioSotto" destination="k0V-gJ-NHW" id="vBP-Vw-clL"/>
-                        <outlet property="Immagine" destination="Agc-Rp-Vrq" id="qfE-vI-OPX"/>
+                        <outlet property="Immagine" destination="cMG-o4-hiM" id="cfh-Ri-a10"/>
                         <outlet property="Quadrato" destination="xDI-fG-6jr" id="Egy-Z7-teB"/>
                         <outlet property="TraingoloSotto" destination="Agc-Rp-Vrq" id="TgF-6E-8dl"/>
                         <outlet property="Triangolo" destination="SQV-G6-DqG" id="miZ-lb-oew"/>
