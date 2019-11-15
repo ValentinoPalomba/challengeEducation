@@ -40,6 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="K84-Zy-mlM"/>
                     </view>
                     <connections>
+                        <outlet property="Palla" destination="5iv-VX-8Pq" id="5Jo-MM-OBn"/>
                         <outlet property="mainImageView" destination="ZYq-i1-epc" id="7AE-oz-GNI"/>
                         <outlet property="tempImageView" destination="aBa-lc-NNU" id="tGh-0h-E4R"/>
                     </connections>

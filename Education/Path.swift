@@ -20,6 +20,7 @@ class FollowPath : UIViewController{
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var tempImageView: UIImageView!
     
+    @IBOutlet weak var Palla: UIImageView!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       guard let touch = touches.first else {
@@ -68,9 +69,12 @@ class FollowPath : UIViewController{
         swiped = true
         let currentPoint = touch.location(in: view)
     //    drawLine(from: lastPoint, to: currentPoint)
-       
+        if self.Palla.frame.contains(touch.location(in: view)){
             drawLine(from: lastPoint, to: currentPoint)
-             
+            UIView.animate(withDuration: 0.8, animations: {
+                self.Palla.center = CGPoint(x: currentPoint.x, y: currentPoint.y)
+            })
+        }
        
         // 7
         lastPoint = currentPoint
@@ -95,6 +99,7 @@ class FollowPath : UIViewController{
     
     @IBAction func resetPressed(_ sender: Any) {
       mainImageView.image = nil
+        mainImageView.image = UIImage(named: "background")
     }
     
     

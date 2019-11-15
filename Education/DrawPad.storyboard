@@ -140,7 +140,7 @@
                                     <constraint firstAttribute="height" constant="100" id="Xr3-nu-NOH"/>
                                     <constraint firstAttribute="width" constant="28" id="fqj-Lb-VAz"/>
                                 </constraints>
-                                <state key="normal" image="Brown">
+                                <state key="normal" image="colore_marrone2@4x-8">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -173,8 +173,8 @@
                                     <action selector="pencilPressed:" destination="bnj-k7-SPu" eventType="touchUpInside" id="N3Z-5X-jav"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-Qb-y5J">
-                                <rect key="frame" x="280" y="567" width="28" height="100"/>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-Qb-y5J">
+                                <rect key="frame" x="280" y="567" width="28" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="28" id="WD6-ml-CUH"/>
                                     <constraint firstAttribute="height" constant="100" id="uON-jH-u8s"/>
@@ -261,12 +261,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Brown" width="53" height="332"/>
         <image name="colore_arancione2@4x-8" width="479" height="1464"/>
         <image name="colore_blu2_1@4x-8" width="476" height="1464"/>
         <image name="colore_celeste2@4x-8" width="476" height="1465"/>
         <image name="colore_giallo2@4x-8" width="479" height="1464"/>
         <image name="colore_grigio2@4x-8" width="476" height="1465"/>
+        <image name="colore_marrone2@4x-8" width="479" height="1464"/>
         <image name="colore_nero2@4x-8" width="476" height="1465"/>
         <image name="colore_rosso2@4x-8" width="479" height="1464"/>
         <image name="colore_verde.chiaro2@4x-8" width="476" height="1466"/>
