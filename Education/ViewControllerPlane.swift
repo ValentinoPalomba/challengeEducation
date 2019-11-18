@@ -21,6 +21,7 @@ class ViewController2: UIViewController {
     @IBOutlet weak var LetterA: UIImageView!
     @IBOutlet weak var LetteraT: UIImageView!
     
+    @IBOutlet weak var Back: UIButton!
     @IBOutlet weak var Green: UIButton!
     
     @IBOutlet weak var Barriera: UIImageView!
@@ -45,6 +46,8 @@ class ViewController2: UIViewController {
         LetteraTSotto.isHidden = true
         Green.isHidden = true
         Green.isEnabled = false
+        Back.isHidden = true
+        Back.isEnabled = false
         counter = 0
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
@@ -60,7 +63,23 @@ class ViewController2: UIViewController {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-        
+//        var bool = false
+//        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
+//        motionManager.startDeviceMotionUpdates(to: OperationQueue.current!){ (data, error) in
+//            if let myData = data {
+//                let shake = data?.attitude
+//                if shake!.roll > 0.5 && bool == false{
+//                    bool = true
+//                    /* animazione da fare in entrata */
+//
+//                }
+//                else if shake!.roll > 0.5 && bool == true {
+//                    bool = false
+//                    /* animazione da fare in uscita */
+//                }
+//            }
+            
+//        }
         motionManager.gyroUpdateInterval = 1.0 / 60.0
         motionManager.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
             if let myData = data
@@ -95,11 +114,13 @@ class ViewController2: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isHidden = false
                 self.Green.isEnabled = true
+                self.Back.isHidden = false
+                self.Back.isEnabled = true
             }
             
         }
     }
-    
+   
     
     @IBOutlet weak var Palla: UIImageView!
     

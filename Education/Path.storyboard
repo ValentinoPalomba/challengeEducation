@@ -15,31 +15,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beach1 bg_Tavola disegno 1 copia 2" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-i1-epc">
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-i1-epc">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aBa-lc-NNU">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kM-Wd-BdN">
-                                <rect key="frame" x="175" y="44" width="65" height="65"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PALLA2" translatesAutoresizingMaskIntoConstraints="NO" id="5iv-VX-8Pq">
+                                <rect key="frame" x="161" y="44" width="92" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A" translatesAutoresizingMaskIntoConstraints="NO" id="rZM-a5-AWN">
+                                <rect key="frame" x="273" y="193" width="85" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="B" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-vb-OE3">
+                                <rect key="frame" x="55" y="403" width="85" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 16" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-W8-EtC">
+                                <rect key="frame" x="273" y="573" width="85" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Tg-Q4j">
+                                <rect key="frame" x="20" y="35" width="36" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kM-Wd-BdN">
+                                <rect key="frame" x="329" y="20" width="65" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetPressed:" destination="HNk-TM-0hg" eventType="touchUpInside" id="Hnq-fb-b2u"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PALLA2" translatesAutoresizingMaskIntoConstraints="NO" id="5iv-VX-8Pq">
-                                <rect key="frame" x="269" y="44" width="92" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="K84-Zy-mlM"/>
                     </view>
                     <connections>
+                        <outlet property="LetteraA" destination="rZM-a5-AWN" id="Q8L-FA-BOc"/>
+                        <outlet property="LetteraB" destination="o7c-vb-OE3" id="AIl-pm-pXR"/>
+                        <outlet property="LetteraC" destination="OKe-W8-EtC" id="Yhu-jk-hzX"/>
                         <outlet property="Palla" destination="5iv-VX-8Pq" id="5Jo-MM-OBn"/>
                         <outlet property="mainImageView" destination="ZYq-i1-epc" id="7AE-oz-GNI"/>
                         <outlet property="tempImageView" destination="aBa-lc-NNU" id="tGh-0h-E4R"/>
@@ -51,7 +75,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="A" width="211" height="297"/>
+        <image name="B" width="211" height="297"/>
         <image name="PALLA2" width="153" height="156"/>
-        <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
+        <image name="Risorsa 16" width="211" height="263"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="sfondomenu_4anni@4x-8" width="4547" height="5796"/>
     </resources>
 </document>

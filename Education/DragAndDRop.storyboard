@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEz-Ye-9nt">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -7,6 +7,90 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Main-->
+        <scene sceneID="IYt-xI-bC2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="bc4-tC-s4x" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCc-JY-4pY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="-267"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pb6-Um-69F">
+            <objects>
+                <viewController id="cEz-Ye-9nt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4T2-SD-oFX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-sx-L1P">
+                                <rect key="frame" x="-332" y="-596" width="1168" height="2183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-nC-Iea">
+                                <rect key="frame" x="20" y="216" width="81" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="4gioco1@4x-8"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="r0t-yE-dF8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fjR-6y-fZI">
+                                <rect key="frame" x="167" y="216" width="81" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="4gioco2@4x-8"/>
+                                <connections>
+                                    <segue destination="N85-qv-gBL" kind="presentation" modalPresentationStyle="fullScreen" id="w5z-RX-EAK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zM4-fA-Tdd">
+                                <rect key="frame" x="313" y="216" width="81" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="4gioco3@4x-8"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzQ-f5-gCn">
+                                <rect key="frame" x="145" y="438" width="124" height="79"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <state key="normal" title="Draw"/>
+                                <connections>
+                                    <segue destination="IGt-rV-wKA" kind="presentation" modalPresentationStyle="fullScreen" id="Pb7-xP-dbf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chose Your Level!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-0C-LMM">
+                                <rect key="frame" x="20" y="101" width="374" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyw-i3-wqH">
+                                <rect key="frame" x="20" y="44" width="35" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="chevron.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="47"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bc4-tC-s4x" kind="presentation" modalPresentationStyle="fullScreen" id="Y1X-Wz-rSe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cqj-Kg-szk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xk-T7-EBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-775.36231884057975" y="126.5625"/>
+        </scene>
+        <!--DrawPad-->
+        <scene sceneID="J9s-aL-LpI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DrawPad" id="IGt-rV-wKA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TkA-Us-hKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-764" y="517"/>
+        </scene>
         <!--Drag And Drop1-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -51,11 +135,20 @@
                                     <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tih-B0-dk9">
+                                <rect key="frame" x="52" y="717" width="113" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastorosso.2@4x-8"/>
+                                <connections>
+                                    <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="06A-pb-0Uv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="Back" destination="tih-B0-dk9" id="jmV-ZN-Fel"/>
                         <outlet property="Button" destination="nbf-Dv-Y3R" id="uPM-MI-v3Z"/>
                         <outlet property="Cerchio" destination="Q62-7h-MaR" id="y3u-M5-qCn"/>
                         <outlet property="CerchioSotto" destination="EEa-uO-Jr3" id="Ri2-mo-vad"/>
@@ -110,7 +203,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="Ds4-jf-8P0" kind="modal" modalPresentationStyle="fullScreen" id="SdK-Ga-IgC"/>
+                                    <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="g3v-z1-HpO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2P-Np-pCj">
+                                <rect key="frame" x="66" y="714" width="113" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastorosso.2@4x-8"/>
+                                <connections>
+                                    <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="5wx-S7-O5z"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,6 +219,7 @@
                         <viewLayoutGuide key="safeArea" id="LLp-Wm-oou"/>
                     </view>
                     <connections>
+                        <outlet property="Back" destination="P2P-Np-pCj" id="MxQ-pO-Jmu"/>
                         <outlet property="Button" destination="6eN-VI-1T1" id="RMX-gq-jct"/>
                         <outlet property="Cerchio" destination="vRh-Ob-xAu" id="S83-zF-ct8"/>
                         <outlet property="CerchioSotto" destination="k0V-gJ-NHW" id="vBP-Vw-clL"/>
@@ -131,16 +233,11 @@
             </objects>
             <point key="canvasLocation" x="966.66666666666674" y="137.94642857142856"/>
         </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="xqi-Pg-WI2">
-            <objects>
-                <viewControllerPlaceholder id="Ds4-jf-8P0" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2et-hh-szi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1747" y="138"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="4gioco1@4x-8" width="800" height="800"/>
+        <image name="4gioco2@4x-8" width="800" height="800"/>
+        <image name="4gioco3@4x-8" width="800" height="800"/>
         <image name="Risorsa 18-100" width="1125" height="2436"/>
         <image name="Risorsa 20-1" width="428" height="600"/>
         <image name="Risorsa 21-1" width="455" height="596"/>
@@ -155,6 +252,13 @@
         <image name="Risorsa 7" width="490" height="447"/>
         <image name="Risorsa 8" width="430" height="491"/>
         <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
+        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="popup2" width="449" height="358"/>
+        <image name="sfondomenu_4anni@4x-8" width="4547" height="5796"/>
+        <image name="tastorosso.2@4x-8" width="176" height="177"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="w5z-RX-EAK"/>
+        <segue reference="g3v-z1-HpO"/>
+    </inferredMetricsTieBreakers>
 </document>

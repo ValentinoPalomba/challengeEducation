@@ -30,6 +30,7 @@ class ViewController3: UIViewController {
     @IBOutlet weak var Barrier3: UIImageView!
     var motionManager = CMMotionManager()
     
+    @IBOutlet weak var Back: UIButton!
     @IBOutlet weak var LetteraASotto: UIImageView!
     @IBOutlet weak var Barrier5: UIImageView!
     
@@ -48,6 +49,8 @@ class ViewController3: UIViewController {
         Green.isHidden = true
         Green.isEnabled = false
         PopUP.isHidden = true
+        Back.isHidden = true
+        Back.isEnabled = false
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
         gravity.gravityDirection = CGVector(dx: 0, dy: 0)
@@ -103,6 +106,8 @@ class ViewController3: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
+                self.Back.isHidden = false
+                self.Back.isEnabled = true
             }
             
         }

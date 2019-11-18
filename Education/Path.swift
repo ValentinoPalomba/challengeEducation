@@ -22,6 +22,9 @@ class FollowPath : UIViewController{
     
     @IBOutlet weak var Palla: UIImageView!
     
+    @IBOutlet weak var LetteraC: UIImageView!
+    @IBOutlet weak var LetteraB: UIImageView!
+    @IBOutlet weak var LetteraA: UIImageView!
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
       guard let touch = touches.first else {
         return
@@ -74,6 +77,15 @@ class FollowPath : UIViewController{
             UIView.animate(withDuration: 0.8, animations: {
                 self.Palla.center = CGPoint(x: currentPoint.x, y: currentPoint.y)
             })
+            if self.Palla.frame.intersects(LetteraA.frame){
+                LetteraA.isHidden = true
+            }
+            if self.Palla.frame.intersects(LetteraB.frame){
+                           LetteraB.isHidden = true
+                       }
+            if self.Palla.frame.intersects(LetteraC.frame){
+                           LetteraC.isHidden = true
+                       }
         }
        
         // 7
@@ -99,7 +111,7 @@ class FollowPath : UIViewController{
     
     @IBAction func resetPressed(_ sender: Any) {
       mainImageView.image = nil
-        mainImageView.image = UIImage(named: "background")
+        mainImageView.image = UIImage(named: "sfondomenu_4anni@4x-8")
     }
     
     
