@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bfl-JZ-QhL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o7l-ag-zPe">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -14,13 +14,41 @@
                     <view key="view" contentMode="scaleToFill" id="qGP-KZ-IYX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggq-s4-fRG">
+                                <rect key="frame" x="20" y="563" width="374" height="181"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Bfl-JZ-QhL" kind="presentation" modalPresentationStyle="fullScreen" id="4Dr-bg-0y5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cY3-5P-BFN">
+                                <rect key="frame" x="20" y="114" width="374" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="181" id="vSf-4R-bG5"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="LinkSettings:" destination="o7l-ag-zPe" eventType="touchUpInside" id="ihC-Qf-tL3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cY3-5P-BFN" firstAttribute="leading" secondItem="ggq-s4-fRG" secondAttribute="leading" id="0ov-TX-7c9"/>
+                            <constraint firstItem="cY3-5P-BFN" firstAttribute="top" secondItem="vPp-1g-0ho" secondAttribute="top" constant="70" id="2J5-y6-ATt"/>
+                            <constraint firstItem="ggq-s4-fRG" firstAttribute="top" secondItem="vPp-1g-0ho" secondAttribute="top" constant="519" id="QRJ-on-ajQ"/>
+                            <constraint firstItem="ggq-s4-fRG" firstAttribute="trailing" secondItem="qGP-KZ-IYX" secondAttribute="trailingMargin" id="Xvn-mU-W4u"/>
+                            <constraint firstItem="cY3-5P-BFN" firstAttribute="trailing" secondItem="ggq-s4-fRG" secondAttribute="trailing" id="ZNV-T8-oB5"/>
+                            <constraint firstItem="ggq-s4-fRG" firstAttribute="leading" secondItem="qGP-KZ-IYX" secondAttribute="leadingMargin" id="oCR-dl-fh4"/>
+                            <constraint firstItem="vPp-1g-0ho" firstAttribute="bottom" secondItem="ggq-s4-fRG" secondAttribute="bottom" constant="118" id="xd0-XN-GbJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vPp-1g-0ho"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uGc-C2-5m0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1588" y="138"/>
+            <point key="canvasLocation" x="-1588.4057971014495" y="137.94642857142856"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XTn-kB-DVI">
