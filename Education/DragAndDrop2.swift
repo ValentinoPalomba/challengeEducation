@@ -18,6 +18,7 @@ class DragAndDrop2 : UIViewController{
         @IBOutlet weak var Immagine: UIImageView!
     @IBOutlet weak var Button: UIButton!
     @IBOutlet weak var Back: UIButton!
+    
     override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view.

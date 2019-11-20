@@ -46,8 +46,7 @@ class ViewController2: UIViewController {
         LetteraTSotto.isHidden = true
         Green.isHidden = true
         Green.isEnabled = false
-        Back.isHidden = true
-        Back.isEnabled = false
+       
         counter = 0
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
@@ -114,8 +113,7 @@ class ViewController2: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isHidden = false
                 self.Green.isEnabled = true
-                self.Back.isHidden = false
-                self.Back.isEnabled = true
+               
             }
             
         }

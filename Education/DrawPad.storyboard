@@ -182,14 +182,6 @@
                                     <action selector="resetPressed:" destination="bnj-k7-SPu" eventType="touchUpInside" id="H6P-ve-uJA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-lW-x8u">
-                                <rect key="frame" x="16" y="44" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <segue destination="5NX-h4-vWw" kind="presentation" modalPresentationStyle="fullScreen" id="yaK-wC-RoV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="11" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuW-Qb-y5J">
                                 <rect key="frame" x="280" y="678" width="28" height="179"/>
                                 <constraints>
@@ -201,6 +193,14 @@
                                 </state>
                                 <connections>
                                     <action selector="pencilPressed:" destination="bnj-k7-SPu" eventType="touchUpInside" id="0Nk-mh-mRf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N7i-lW-x8u">
+                                <rect key="frame" x="22" y="67" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="5NX-h4-vWw" kind="presentation" modalPresentationStyle="fullScreen" id="yaK-wC-RoV"/>
                                 </connections>
                             </button>
                         </subviews>
