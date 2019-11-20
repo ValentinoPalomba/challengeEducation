@@ -47,9 +47,7 @@ class ViewController5years: UIViewController {
         self.LetteraESotto.isHidden = true
         self.Green.isEnabled = false
         self.Green.isHidden = true
-        Back.isHidden = true
-        Back.isEnabled = false
-        
+       
         
         /* Descrive il comportamento di gravità e collisioni */
         
@@ -106,8 +104,7 @@ class ViewController5years: UIViewController {
                 self.PopuP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
-                self.Back.isHidden = false
-                self.Back.isEnabled = true
+               
             }
         }
         
