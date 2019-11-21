@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bfl-JZ-QhL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,6 +26,9 @@
                                 <state key="normal" title="Button" image="Tavola disegno 1@4x-8">
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="CZV-RZ-EjJ" kind="presentation" modalPresentationStyle="fullScreen" id="YjI-nZ-Unm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsU-MZ-yWn">
                                 <rect key="frame" x="83" y="338" width="311" height="79"/>
@@ -65,6 +68,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HHR-1u-YGY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-701.44927536231887" y="137.94642857142856"/>
+        </scene>
+        <!--DrawPad-->
+        <scene sceneID="Qe0-oo-nWO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DrawPad" id="CZV-RZ-EjJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kVh-gH-Poy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-194" y="-56"/>
         </scene>
         <!--DragAndDRop-->
         <scene sceneID="JnP-1G-iOI">
