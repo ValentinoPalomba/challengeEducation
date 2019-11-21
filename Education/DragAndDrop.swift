@@ -22,8 +22,8 @@ class DragAndDrop1: UIViewController {
     override func viewDidLoad() {
         Button.isHidden = true
         Button.isEnabled = false
-        Back.isHidden = true
-        Back.isEnabled = false
+        Back.isHidden = false
+        Back.isEnabled = true
     }
     
     

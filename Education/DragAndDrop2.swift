@@ -24,8 +24,8 @@ class DragAndDrop2 : UIViewController{
         // Do any additional setup after loading the view.
         Button.isHidden = true
         Button.isEnabled = false
-        Back.isEnabled = false
-        Back.isHidden = true
+        Back.isEnabled = true
+        Back.isHidden = false
     }
     
     
