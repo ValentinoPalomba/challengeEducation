@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sWh-kF-mBm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,20 +67,20 @@
                                 <rect key="frame" x="0.0" y="-20" width="414" height="934"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC1-uz-6h6">
-                                <rect key="frame" x="20" y="44" width="54" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="tastorosso.2@4x-8"/>
-                                <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="rKY-Qz-n2d"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-cX-0gg">
                                 <rect key="frame" x="146" y="381" width="136" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
                                     <segue destination="c4x-1Q-yo5" kind="presentation" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LC1-uz-6h6">
+                                <rect key="frame" x="19" y="44" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastorosso.2@4x-8"/>
+                                <connections>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="rKY-Qz-n2d"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -177,20 +177,20 @@
                                 <rect key="frame" x="0.0" y="-60" width="414" height="1014"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-m9-hT2">
-                                <rect key="frame" x="20" y="14" width="55" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="tastorosso.2@4x-8"/>
-                                <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="K5Z-Hg-6Wg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0N-mt-bzX">
                                 <rect key="frame" x="143" y="394" width="162" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
                                     <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-m9-hT2">
+                                <rect key="frame" x="20" y="44" width="38" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastorosso.2@4x-8"/>
+                                <connections>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="K5Z-Hg-6Wg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -396,10 +396,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m6-6p-H6A">
-                                <rect key="frame" x="20" y="44" width="94" height="57"/>
+                                <rect key="frame" x="20" y="44" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <state key="normal" title="Back" image="chevron.left" catalog="system">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" image="chevron.left" catalog="system">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                 </state>
@@ -411,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56h-SG-cER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2974" y="-24"/>
+            <point key="canvasLocation" x="-2975.36231884058" y="-24.107142857142858"/>
         </scene>
     </scenes>
     <resources>
@@ -452,7 +452,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="K5Z-Hg-6Wg"/>
-        <segue reference="wPG-FT-hAx"/>
-        <segue reference="wMd-eb-s42"/>
+        <segue reference="yxf-lA-Di4"/>
+        <segue reference="V9M-xe-zAr"/>
     </inferredMetricsTieBreakers>
 </document>

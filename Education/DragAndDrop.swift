@@ -9,7 +9,7 @@
 import UIKit
 
 class DragAndDrop1: UIViewController {
-
+    
     @IBOutlet weak var Cerchio: UIImageView!
     @IBOutlet weak var Triangolo: UIImageView!
     @IBOutlet weak var CerchioSotto: UIImageView!
@@ -41,19 +41,19 @@ class DragAndDrop1: UIViewController {
             }
             
             if CerchioSotto.frame.contains(position) == true {
-                           UIView.animate(withDuration: 0.2, animations: {
-                               self.CerchioSotto.center = CGPoint(x: position.x, y: position.y)
-                               self.TraingoloSotto.isUserInteractionEnabled = false
-                               self.Immagine.isUserInteractionEnabled = false
-                           })
-                }
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.CerchioSotto.center = CGPoint(x: position.x, y: position.y)
+                    self.TraingoloSotto.isUserInteractionEnabled = false
+                    self.Immagine.isUserInteractionEnabled = false
+                })
+            }
             if TraingoloSotto.frame.contains(position) == true {
-                           UIView.animate(withDuration: 0.2, animations: {
-                               self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
-                               self.CerchioSotto.isUserInteractionEnabled = false
-                               self.Immagine.isUserInteractionEnabled = false
-                           })
-                }
+                UIView.animate(withDuration: 0.2, animations: {
+                    self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
+                    self.CerchioSotto.isUserInteractionEnabled = false
+                    self.Immagine.isUserInteractionEnabled = false
+                })
+            }
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)
@@ -64,14 +64,14 @@ class DragAndDrop1: UIViewController {
                 Back.isEnabled = true
             }
         }
-            
-}
-   
+        
+    }
+    
     
     func confronto(Quadrato : UIImageView, Immagine : UIImageView)
     {
         if Quadrato.frame.contains(Immagine.frame){
-         
+            
             Immagine.frame = Quadrato.frame
             Immagine.center = Quadrato.center
             Immagine.isHighlighted = true
@@ -79,5 +79,5 @@ class DragAndDrop1: UIViewController {
             Immagine.isUserInteractionEnabled = false
             
         }
-}
+    }
 }
