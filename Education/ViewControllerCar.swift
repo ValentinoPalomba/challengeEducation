@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreMotion
+import AVFoundation
 
 class ViewController5years: UIViewController {
     var collision : UICollisionBehavior!
@@ -64,6 +65,7 @@ class ViewController5years: UIViewController {
         self.animator.addBehavior(self.collision)
         
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         /* Funzione che ricava dati dal giroscopio e applica le coordinate alla gravità */
         motionManager.gyroUpdateInterval = 1.0 / 60.0
@@ -77,23 +79,27 @@ class ViewController5years: UIViewController {
                 
                 self.gravity.gravityDirection = CGVector(dx: y, dy: x)
                 
-                
             }
+            
             if self.Airplane.frame.intersects(self.LetteraA.frame) == true {
+                self.playSound(NameSong: "LetteraA")
                 self.LetteraASotto.isHidden = false
                 self.LetteraA.isHidden = true
             }
             
             if self.Airplane.frame.intersects(self.LetteraL.frame) == true {
+                self.playSound(NameSong: "LetteraL")
                 self.LetteraLSotto.isHidden = false
                 self.LetteraL.isHidden = true
             }
             
             if self.Airplane.frame.intersects(self.LetteraP.frame) == true {
+                self.playSound(NameSong: "LetteraP")
                 self.LetteraPSotto.isHidden = false
                 self.LetteraP.isHidden = true
             }
             if self.Airplane.frame.intersects(self.LetteraN.frame) == true {
+                self.playSound(NameSong: "LetteraN")
                 self.LetteraNSotto.isHidden = false
                 self.LetteraN.isHidden = true
             }
@@ -101,18 +107,44 @@ class ViewController5years: UIViewController {
             if self.Airplane.frame.intersects(self.LetteraE.frame) == true {
                 self.LetteraESotto.isHidden = false
                 self.LetteraE.isHidden = true
+               
+            }
+            
+                if (self.LetteraA.isHidden == true && self.LetteraP.isHidden == true && self.LetteraN.isHidden == true && self.LetteraL.isHidden == true && self.LetteraE.isHidden)
+            {
                 self.PopuP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
-               
-            }
+                
         }
         
-    }
+    
+}
     
     
-    
-    
+}
+    var player: AVAudioPlayer?
+
+       func playSound(NameSong : String) {
+           guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
+
+           do {
+               try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+               try AVAudioSession.sharedInstance().setActive(true)
+
+               /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+               player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+
+              
+               guard let player = player else { return }
+
+               player.play()
+
+           } catch let error {
+               print(error.localizedDescription)
+           }
+       }
+       
     
     
     

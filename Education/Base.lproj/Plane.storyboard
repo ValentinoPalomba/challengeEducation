@@ -411,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="56h-SG-cER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2562.3188405797105" y="-42.1875"/>
+            <point key="canvasLocation" x="-2974" y="-24"/>
         </scene>
     </scenes>
     <resources>
@@ -451,7 +451,7 @@
         <image name="verchetella" width="381" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xZR-d3-NT9"/>
+        <segue reference="K5Z-Hg-6Wg"/>
         <segue reference="wPG-FT-hAx"/>
         <segue reference="wMd-eb-s42"/>
     </inferredMetricsTieBreakers>

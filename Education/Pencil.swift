@@ -2,6 +2,8 @@
 
 import Foundation
 import UIKit
+var first = false
+
 
 enum Pencil {
   case black

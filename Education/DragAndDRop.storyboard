@@ -8,12 +8,12 @@
     </dependencies>
     <scenes>
         <!--Main-->
-        <scene sceneID="IYt-xI-bC2">
+        <scene sceneID="bly-bx-RZ2">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="bc4-tC-s4x" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aCc-JY-4pY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" id="3Ga-eR-grz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLk-c0-PeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1029" y="-267"/>
+            <point key="canvasLocation" x="-1107" y="-287"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="pb6-Um-69F">
@@ -48,15 +48,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="4gioco3@4x-8"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzQ-f5-gCn">
-                                <rect key="frame" x="145" y="438" width="124" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
-                                <state key="normal" title="Draw"/>
-                                <connections>
-                                    <segue destination="IGt-rV-wKA" kind="presentation" modalPresentationStyle="fullScreen" id="Pb7-xP-dbf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chose Your Level!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c7-0C-LMM">
                                 <rect key="frame" x="20" y="101" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -71,7 +62,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="47"/>
                                 </state>
                                 <connections>
-                                    <segue destination="bc4-tC-s4x" kind="presentation" modalPresentationStyle="fullScreen" id="Y1X-Wz-rSe"/>
+                                    <segue destination="3Ga-eR-grz" kind="presentation" modalPresentationStyle="fullScreen" id="oFt-nE-ViM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -82,14 +73,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Xk-T7-EBB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-775.36231884057975" y="126.5625"/>
-        </scene>
-        <!--DrawPad-->
-        <scene sceneID="J9s-aL-LpI">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DrawPad" id="IGt-rV-wKA" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TkA-Us-hKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-764" y="517"/>
         </scene>
         <!--Drag And Drop1-->
         <scene sceneID="tne-QT-ifu">
