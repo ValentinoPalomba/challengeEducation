@@ -47,7 +47,7 @@ class ViewController2: UIViewController {
         LetteraTSotto.isHidden = true
         Green.isHidden = true
         Green.isEnabled = false
-       
+        
         counter = 0
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
@@ -63,23 +63,23 @@ class ViewController2: UIViewController {
         
     }
     override func viewDidAppear(_ animated: Bool) {
-//        var bool = false
-//        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
-//        motionManager.startDeviceMotionUpdates(to: OperationQueue.current!){ (data, error) in
-//            if let myData = data {
-//                let shake = data?.attitude
-//                if shake!.roll > 0.5 && bool == false{
-//                    bool = true
-//                    /* animazione da fare in entrata */
-//
-//                }
-//                else if shake!.roll > 0.5 && bool == true {
-//                    bool = false
-//                    /* animazione da fare in uscita */
-//                }
-//            }
-            
-//        }
+        //        var bool = false
+        //        motionManager.deviceMotionUpdateInterval = 1.0 / 60.0
+        //        motionManager.startDeviceMotionUpdates(to: OperationQueue.current!){ (data, error) in
+        //            if let myData = data {
+        //                let shake = data?.attitude
+        //                if shake!.roll > 0.5 && bool == false{
+        //                    bool = true
+        //                    /* animazione da fare in entrata */
+        //
+        //                }
+        //                else if shake!.roll > 0.5 && bool == true {
+        //                    bool = false
+        //                    /* animazione da fare in uscita */
+        //                }
+        //            }
+        
+        //        }
         motionManager.gyroUpdateInterval = 1.0 / 60.0
         motionManager.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
             if let myData = data
@@ -93,21 +93,16 @@ class ViewController2: UIViewController {
                 
             }
             if self.Palla.frame.intersects(self.LetterA.frame) == true {
-                
                 self.LetterA.isHidden = true
                 self.LetteraASotto.isHidden = false
-                
-                
             }
             if self.Palla.frame.intersects(self.LetteraB.frame) == true {
                 self.LetteraB.isHidden = true
                 self.LetteraBSotto.isHidden = false
-                
             }
             if self.Palla.frame.intersects(self.LetteraO.frame) == true {
                 self.LetteraO.isHidden = true
                 self.LetteraOSotto.isHidden = false
-                
             }
             if self.Palla.frame.intersects(self.LetteraT.frame) == true {
                 self.LetteraT.isHidden = true
@@ -115,35 +110,33 @@ class ViewController2: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isHidden = false
                 self.Green.isEnabled = true
-               
             }
             
         }
-        
         var player: AVAudioPlayer?
-
-    func playSound(NameSong : String) {
-               guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
-
-               do {
-                   try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-                   try AVAudioSession.sharedInstance().setActive(true)
-
-                   /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-                   player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-                  
-                   guard let player = player else { return }
-
-                   player.play()
-
-               } catch let error {
-                   print(error.localizedDescription)
-               }
-           }
-           
+        
+        func playSound(NameSong : String) {
+            guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
+            
+            do {
+                try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+                try AVAudioSession.sharedInstance().setActive(true)
+                
+                /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+                
+                
+                guard let player = player else { return }
+                
+                player.play()
+                
+            } catch let error {
+                print(error.localizedDescription)
+            }
+        }
+        
     }
-   
+    
     
     @IBOutlet weak var Palla: UIImageView!
     

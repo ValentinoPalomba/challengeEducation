@@ -75,7 +75,7 @@
                 <viewControllerPlaceholder storyboardName="DrawPad" id="CZV-RZ-EjJ" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVh-gH-Poy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-194" y="-56"/>
+            <point key="canvasLocation" x="-81" y="-57"/>
         </scene>
         <!--DragAndDRop-->
         <scene sceneID="JnP-1G-iOI">
@@ -83,7 +83,7 @@
                 <viewControllerPlaceholder storyboardName="DragAndDRop" id="ouU-1Q-diV" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WDh-1y-EVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="140"/>
+            <point key="canvasLocation" x="-81" y="145"/>
         </scene>
         <!--Plane-->
         <scene sceneID="dfp-ah-z4K">
@@ -93,7 +93,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dqx-i9-Ns0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817" y="398"/>
+            <point key="canvasLocation" x="-81" y="271"/>
         </scene>
     </scenes>
     <resources>

@@ -48,7 +48,7 @@ class ViewController5years: UIViewController {
         self.LetteraESotto.isHidden = true
         self.Green.isEnabled = false
         self.Green.isHidden = true
-       
+        
         
         /* Descrive il comportamento di gravità e collisioni */
         
@@ -107,44 +107,44 @@ class ViewController5years: UIViewController {
             if self.Airplane.frame.intersects(self.LetteraE.frame) == true {
                 self.LetteraESotto.isHidden = false
                 self.LetteraE.isHidden = true
-               
+                
             }
             
-                if (self.LetteraA.isHidden == true && self.LetteraP.isHidden == true && self.LetteraN.isHidden == true && self.LetteraL.isHidden == true && self.LetteraE.isHidden)
+            if (self.LetteraA.isHidden == true && self.LetteraP.isHidden == true && self.LetteraN.isHidden == true && self.LetteraL.isHidden == true && self.LetteraE.isHidden)
             {
                 self.PopuP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
                 
+            }
+            
+            
         }
         
-    
-}
-    
-    
-}
+        
+    }
     var player: AVAudioPlayer?
-
-       func playSound(NameSong : String) {
-           guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
-
-           do {
-               try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-               try AVAudioSession.sharedInstance().setActive(true)
-
-               /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-               player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-
-              
-               guard let player = player else { return }
-
-               player.play()
-
-           } catch let error {
-               print(error.localizedDescription)
-           }
-       }
-       
+    
+    func playSound(NameSong : String) {
+        guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            
+            
+            guard let player = player else { return }
+            
+            player.play()
+            
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
+    
     
     
     
