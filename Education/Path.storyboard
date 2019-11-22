@@ -23,7 +23,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-i1-epc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Uho-wK-JmS">
+                                <rect key="frame" x="-19" y="-17" width="453" height="948"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="ZYq-i1-epc">
                                 <rect key="frame" x="-8" y="0.0" width="429" height="904"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>

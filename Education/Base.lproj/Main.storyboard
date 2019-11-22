@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
-                                <rect key="frame" x="60" y="338" width="294" height="134"/>
+                                <rect key="frame" x="60" y="344" width="294" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastomenu_3anni-1@4x-8"/>
                                 <connections>

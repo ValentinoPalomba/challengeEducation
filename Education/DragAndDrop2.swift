@@ -34,24 +34,31 @@ class DragAndDrop2 : UIViewController{
         if let touch = touches.first
         {
             let position = touch.preciseLocation(in: view)
-            if Immagine.frame.contains(position) == true {
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.Immagine.center = CGPoint(x: position.x, y: position.y)
-                    
-                })
-            }
-            if CerchioSotto.frame.contains(position) == true {
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.CerchioSotto.center = CGPoint(x: position.x, y: position.y)
-                    
-                })
-            }
-            if TraingoloSotto.frame.contains(position) == true {
-                UIView.animate(withDuration: 0.2, animations: {
-                    self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
-                    
-                })
-            }
+           if Immagine.frame.contains(position) == true && TraingoloSotto.frame.contains(position) == false && CerchioSotto.frame.contains(position) == false{
+               
+               UIView.animate(withDuration: 0.2, animations: {
+                   self.Immagine.center = CGPoint(x: position.x, y: position.y)
+                   self.TraingoloSotto.isUserInteractionEnabled = false
+                   self.CerchioSotto.isUserInteractionEnabled = false
+                   
+               })
+           }
+           
+           if CerchioSotto.frame.contains(position) == true && TraingoloSotto.frame.contains(position) == false && Immagine.frame.contains(position) == false{
+               UIView.animate(withDuration: 0.2, animations: {
+                   self.CerchioSotto.center = CGPoint(x: position.x, y: position.y)
+                   self.TraingoloSotto.isUserInteractionEnabled = false
+                   self.Immagine.isUserInteractionEnabled = false
+               })
+           }
+           if TraingoloSotto.frame.contains(position) == true && CerchioSotto.frame.contains(position) == false && Immagine.frame.contains(position) == false {
+               
+               UIView.animate(withDuration: 0.2, animations: {
+                   self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
+                   
+                       self.CerchioSotto.stopAnimating()
+               })
+           }
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)

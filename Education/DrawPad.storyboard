@@ -27,6 +27,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lavagna_3@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="uK2-XG-HY5">
+                                <rect key="frame" x="-18" y="-7" width="461" height="903"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L06-IZ-4jf" userLabel="MainImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,5 +196,6 @@
         <image name="colore_verde.chiaro2@4x-8" width="476" height="1466"/>
         <image name="colore_verde.scuro2@4x-8" width="476" height="1466"/>
         <image name="gomma2@4x-8" width="436" height="1833"/>
+        <image name="lavagna_3@4x-8" width="1888" height="1436"/>
     </resources>
 </document>
