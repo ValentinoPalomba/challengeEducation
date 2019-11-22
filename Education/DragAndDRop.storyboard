@@ -23,10 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-sx-L1P">
-                                <rect key="frame" x="-332" y="-596" width="1168" height="2183"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-nC-Iea">
                                 <rect key="frame" x="20" y="216" width="81" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -60,6 +56,10 @@
                                     <segue destination="3Ga-eR-grz" kind="presentation" modalPresentationStyle="fullScreen" id="oFt-nE-ViM"/>
                                 </connections>
                             </button>
+                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-sx-L1P">
+                                <rect key="frame" x="-14" y="0.0" width="444" height="911"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="cqj-Kg-szk"/>
@@ -105,20 +105,20 @@
                                 <rect key="frame" x="95" y="411" width="152" height="144"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
-                                <rect key="frame" x="213" y="661" width="170" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
-                                <connections>
-                                    <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tih-B0-dk9">
                                 <rect key="frame" x="20" y="44" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastorosso.2@4x-8"/>
                                 <connections>
                                     <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="06A-pb-0Uv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
+                                <rect key="frame" x="122" y="678" width="170" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                                <connections>
+                                    <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,20 +176,20 @@
                                 <rect key="frame" x="277" y="714" width="82" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
-                                <rect key="frame" x="213" y="661" width="170" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
-                                <connections>
-                                    <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="g3v-z1-HpO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2P-Np-pCj">
                                 <rect key="frame" x="20" y="44" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastorosso.2@4x-8"/>
                                 <connections>
                                     <segue destination="cEz-Ye-9nt" kind="presentation" modalPresentationStyle="fullScreen" id="5wx-S7-O5z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
+                                <rect key="frame" x="122" y="672" width="170" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="popup2"/>
+                                <connections>
+                                    <segue destination="OQg-wQ-Cr9" kind="presentation" id="2ub-gN-tfg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,6 +211,14 @@
             </objects>
             <point key="canvasLocation" x="966.66666666666674" y="137.94642857142856"/>
         </scene>
+        <!--Path-->
+        <scene sceneID="rho-WV-PB6">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Path" id="OQg-wQ-Cr9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TK3-iI-6QE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1654" y="82"/>
+        </scene>
     </scenes>
     <resources>
         <image name="4gioco1@4x-8" width="800" height="800"/>
@@ -231,11 +239,11 @@
         <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="popup2" width="449" height="358"/>
-        <image name="sfondomenu_4anni@4x-8" width="4547" height="5796"/>
+        <image name="sfondomenu_4anni@4x-8" width="1677" height="3592"/>
         <image name="tastorosso.2@4x-8" width="176" height="177"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WRG-Od-bLg"/>
-        <segue reference="g3v-z1-HpO"/>
+        <segue reference="w5z-RX-EAK"/>
+        <segue reference="5wx-S7-O5z"/>
     </inferredMetricsTieBreakers>
 </document>
