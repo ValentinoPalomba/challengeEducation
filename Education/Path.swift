@@ -22,9 +22,27 @@ class FollowPath : UIViewController{
     
     @IBOutlet weak var Palla: UIImageView!
     
+    @IBOutlet weak var Green: UIButton!
+    @IBOutlet weak var PopUp: UIImageView!
+    @IBOutlet weak var Background: UIImageView!
     @IBOutlet weak var LetteraC: UIImageView!
     @IBOutlet weak var LetteraB: UIImageView!
     @IBOutlet weak var LetteraA: UIImageView!
+    
+    override func viewDidLoad() {
+        Background.isHidden = true
+        PopUp.isHidden = true
+        Green.isHidden = true
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if (LetteraA.isHidden == true && LetteraB.isHidden == true && LetteraC.isHidden == true){
+            Background.isHidden = false
+            PopUp.isHidden = false
+            Green.isHidden = false
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
