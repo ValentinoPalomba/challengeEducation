@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bfl-JZ-QhL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,41 +15,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenusenzatasti.1@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="toK-Fw-Yy8">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZz-BO-qxw">
-                                <rect key="frame" x="105" y="200" width="273" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Tavola disegno 1@4x-8">
-                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="CZV-RZ-EjJ" kind="presentation" modalPresentationStyle="fullScreen" id="YjI-nZ-Unm"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsU-MZ-yWn">
-                                <rect key="frame" x="83" y="338" width="311" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="tasto4anni@4x-8">
-                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ouU-1Q-diV" kind="presentation" modalPresentationStyle="fullScreen" id="6G4-y2-78a"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lg6-cT-f7Q">
-                                <rect key="frame" x="105" y="504" width="273" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Risorsa 3@4x-8">
-                                    <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="MoG-kH-h7c" kind="presentation" modalPresentationStyle="fullScreen" id="H8w-l2-3Yd"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
                                 <rect key="frame" x="325" y="31" width="69" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,6 +23,34 @@
                                 </state>
                                 <connections>
                                     <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nuovomenu_corretto@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-Wn-cMr">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-ie-33l">
+                                <rect key="frame" x="60" y="244" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastomenu-1@4x-8"/>
+                                <connections>
+                                    <segue destination="KyN-wO-Tt7" kind="presentation" modalPresentationStyle="fullScreen" id="TEV-Re-Z5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-cB-hHs">
+                                <rect key="frame" x="60" y="438" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nuovoBottone"/>
+                                <connections>
+                                    <segue destination="hWy-Ps-wL3" kind="presentation" modalPresentationStyle="fullScreen" id="yQr-cX-1gq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
+                                <rect key="frame" x="60" y="338" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastomenu_3anni-1@4x-8"/>
+                                <connections>
+                                    <segue destination="Joc-pf-by1" kind="presentation" modalPresentationStyle="fullScreen" id="1Td-oR-53R"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -70,36 +63,34 @@
             <point key="canvasLocation" x="-701.44927536231887" y="137.94642857142856"/>
         </scene>
         <!--DrawPad-->
-        <scene sceneID="Qe0-oo-nWO">
+        <scene sceneID="Ify-5v-67H">
             <objects>
-                <viewControllerPlaceholder storyboardName="DrawPad" id="CZV-RZ-EjJ" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kVh-gH-Poy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="DrawPad" id="KyN-wO-Tt7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PS0-Ep-lW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="-57"/>
+            <point key="canvasLocation" x="27" y="-13"/>
         </scene>
         <!--DragAndDRop-->
-        <scene sceneID="JnP-1G-iOI">
+        <scene sceneID="Dz7-rb-TRC">
             <objects>
-                <viewControllerPlaceholder storyboardName="DragAndDRop" id="ouU-1Q-diV" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WDh-1y-EVT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="DragAndDRop" id="Joc-pf-by1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7c-5n-g6p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="145"/>
+            <point key="canvasLocation" x="17" y="100"/>
         </scene>
         <!--Plane-->
-        <scene sceneID="dfp-ah-z4K">
+        <scene sceneID="4rc-y9-ebv">
             <objects>
-                <viewControllerPlaceholder storyboardName="Plane" id="MoG-kH-h7c" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="ElU-M5-0ye"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dqx-i9-Ns0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Plane" id="hWy-Ps-wL3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL0-7J-nGy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-81" y="271"/>
+            <point key="canvasLocation" x="27" y="205"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Risorsa 3@4x-8" width="4474" height="1132"/>
-        <image name="Tavola disegno 1@4x-8" width="4236" height="1128"/>
-        <image name="sfondomenusenzatasti.1@4x-8" width="3044" height="6416"/>
-        <image name="tasto4anni@4x-8" width="4236" height="1128"/>
+        <image name="nuovoBottone" width="1758" height="768"/>
+        <image name="nuovomenu_corretto@4x-8" width="4512" height="10508"/>
+        <image name="tastomenu-1@4x-8" width="3516" height="1536"/>
+        <image name="tastomenu_3anni-1@4x-8" width="3516" height="1536"/>
     </resources>
 </document>

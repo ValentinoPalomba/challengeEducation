@@ -60,8 +60,7 @@ class DragAndDrop1: UIViewController {
             if Immagine.isHighlighted == true && TraingoloSotto.isHighlighted == true && CerchioSotto.isHighlighted == true {
                 Button.isHidden = false
                 Button.isEnabled = true
-                Back.isHidden = false
-                Back.isEnabled = true
+               
             }
         }
         

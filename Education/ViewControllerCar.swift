@@ -70,7 +70,7 @@ class ViewController5years: UIViewController {
         /* Funzione che ricava dati dal giroscopio e applica le coordinate alla gravità */
         motionManager.gyroUpdateInterval = 1.0 / 60.0
         motionManager.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
-            if let myData = data
+            if let _ = data
             {
                 
                 let x = (data?.rotationRate.x ?? 0.0)

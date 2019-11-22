@@ -41,6 +41,15 @@ class ViewController3: UIViewController {
     @IBOutlet weak var LetteraRSotto: UIImageView!
     @IBOutlet weak var Barrier8: UIImageView!
     @IBOutlet weak var Barrier7: UIImageView!
+    
+
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         LetteraASotto.isHidden = true
@@ -50,6 +59,9 @@ class ViewController3: UIViewController {
         Green.isHidden = true
         Green.isEnabled = false
         PopUP.isHidden = true
+        
+        
+       
         
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
@@ -74,7 +86,7 @@ class ViewController3: UIViewController {
         
         motionManager.gyroUpdateInterval = 1.0 / 60.0
         motionManager.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
-            if let myData = data
+            if let _ = data
             {
                 let x = (data?.rotationRate.x ?? 0.0) * 2.0
                 let y = (data?.rotationRate.y ?? 0.0)
@@ -86,18 +98,19 @@ class ViewController3: UIViewController {
             
             
             if self.Palla.frame.intersects(self.LetteraC.frame) == true {
-                self.playSound(NameSong: "LetteraC")
+                //                self.playSound(NameSong: "LetteraC.mp3")
+               
                 self.LetteraCSotto.isHidden = false
                 self.LetteraC.isHidden = true
             }
             
             if self.Palla.frame.intersects(self.LetteraA.frame) == true {
-                self.playSound(NameSong: "LetteraA")
+                //                self.playSound(NameSong: "LetteraA.mp3")
                 self.LetteraASotto.isHidden = false
                 self.LetteraA.isHidden = true
             }
             if self.Palla.frame.intersects(self.LetteraR.frame) == true {
-                self.playSound(NameSong: "LetteraR")
+                //                self.playSound(NameSong: "LetteraR.mp3")
                 self.LetteraRSotto.isHidden = false
                 self.LetteraR.isHidden = true
             }
@@ -113,27 +126,7 @@ class ViewController3: UIViewController {
     }
     
     
-    var player: AVAudioPlayer?
     
-    func playSound(NameSong : String) {
-        guard let url = Bundle.main.url(forResource: NameSong, withExtension: "mp3") else { return }
-        
-        do {
-            try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
-            try AVAudioSession.sharedInstance().setActive(true)
-            
-            /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
-            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
-            
-            
-            guard let player = player else { return }
-            
-            player.play()
-            
-        } catch let error {
-            print(error.localizedDescription)
-        }
-    }
     
     
     
