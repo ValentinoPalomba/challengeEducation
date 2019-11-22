@@ -56,7 +56,7 @@
                                     <segue destination="3Ga-eR-grz" kind="presentation" modalPresentationStyle="fullScreen" id="oFt-nE-ViM"/>
                                 </connections>
                             </button>
-                            <imageView autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-sx-L1P">
+                            <imageView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu_4anni@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-sx-L1P">
                                 <rect key="frame" x="-14" y="0.0" width="444" height="911"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -189,7 +189,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="popup2"/>
                                 <connections>
-                                    <segue destination="OQg-wQ-Cr9" kind="presentation" id="2ub-gN-tfg"/>
+                                    <segue destination="OQg-wQ-Cr9" kind="presentation" modalPresentationStyle="fullScreen" id="2ub-gN-tfg"/>
                                 </connections>
                             </button>
                         </subviews>

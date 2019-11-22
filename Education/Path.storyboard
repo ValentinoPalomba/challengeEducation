@@ -78,6 +78,9 @@
                                 <rect key="frame" x="130" y="334" width="172" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Risorsa 21"/>
+                                <connections>
+                                    <segue destination="RLp-0M-kFW" kind="presentation" modalPresentationStyle="fullScreen" id="syY-Ke-MKQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -98,6 +101,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mp4-ge-cbB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="99.776785714285708"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="9MC-lR-5LM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="RLp-0M-kFW" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vLK-kE-dNd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="35"/>
         </scene>
     </scenes>
     <resources>

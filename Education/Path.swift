@@ -36,11 +36,7 @@ class FollowPath : UIViewController{
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if (LetteraA.isHidden == true && LetteraB.isHidden == true && LetteraC.isHidden == true){
-            Background.isHidden = false
-            PopUp.isHidden = false
-            Green.isHidden = false
-        }
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -103,6 +99,11 @@ class FollowPath : UIViewController{
             }
             if self.Palla.frame.intersects(LetteraC.frame){
                 LetteraC.isHidden = true
+            }
+            if (LetteraA.isHidden == true && LetteraB.isHidden == true && LetteraC.isHidden == true){
+                Background.isHidden = false
+                PopUp.isHidden = false
+                Green.isHidden = false
             }
         }
         
