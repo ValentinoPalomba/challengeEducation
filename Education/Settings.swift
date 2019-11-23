@@ -11,7 +11,11 @@ import UIKit
 
 class Settings : UIViewController{
     
+    @IBOutlet weak var twoyears: UIButton!
     
+    @IBOutlet weak var fouryears: UIButton!
+    @IBOutlet weak var threeyears: UIButton!
+    @IBOutlet weak var Scritta: UIImageView!
     
     @IBAction func settingsButton(_ sender: Any) {
         
@@ -40,6 +44,19 @@ class Settings : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        UIView.animate(withDuration: 3, animations: {
+            self.Scritta.transform = CGAffineTransform(translationX: 0, y: 100)
+        }, completion: { _ in
+            
+            self.threeyears.isHidden = false
+            self.fouryears.isHidden = false
+            self.twoyears.isHidden = false
+            UIView.animate(withDuration: 3, animations: {
+                self.twoyears.transform = CGAffineTransform(translationX: 320, y: 0)
+                 self.threeyears.transform = CGAffineTransform(translationX: -320, y: 0)
+                 self.fouryears.transform = CGAffineTransform(translationX: 320, y: 0)
+            })
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
