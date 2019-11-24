@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+import AVFoundation
 class Settings : UIViewController{
     
     @IBOutlet weak var twoyears: UIButton!
@@ -44,26 +44,61 @@ class Settings : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        UIView.animate(withDuration: 2, animations: {
-            self.Scritta.transform = CGAffineTransform(translationX: 0, y: 130)
+        UIView.animate(withDuration: 3, animations: {
+            self.Scritta.transform = CGAffineTransform(translationX: 0, y: 150)
         }, completion: { _ in
-            
+             self.Scritta.isHighlighted = true
             self.threeyears.isHidden = false
             self.fouryears.isHidden = false
             self.twoyears.isHidden = false
-            self.Scritta.isHighlighted = true
+           
             UIView.animate(withDuration: 2, animations: {
-              self.Scritta.isHighlighted = true
+             
                 self.twoyears.transform = CGAffineTransform(translationX: 320, y: 0)
                  self.threeyears.transform = CGAffineTransform(translationX: -320, y: 0)
                  self.fouryears.transform = CGAffineTransform(translationX: 320, y: 0)
+            }, completion: {
+                _ in
+               
+                first = true
             })
         })
+        if first == false{
+        playSound()
+        }
+       
+        if first == true{
+                   self.Scritta.isHighlighted = false
+               }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
        
     }
+    
+    
+    
+    var player: AVAudioPlayer?
+       
+       func playSound() {
+           guard let url = Bundle.main.url(forResource: "Cute_Avalanche", withExtension: "mp3") else { return }
+           
+           do {
+               try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)
+               try AVAudioSession.sharedInstance().setActive(true)
+               
+               /* The following line is required for the player to work on iOS 11. Change the file type accordingly*/
+               player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+               
+               
+               guard let player = player else { return }
+               
+               player.play()
+               
+           } catch let error {
+               print(error.localizedDescription)
+           }
+       }
 }
 
 

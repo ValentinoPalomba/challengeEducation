@@ -24,6 +24,7 @@
 		757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */; };
 		757AAD5F237BFB3700FEC112 /* DragAndDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */; };
 		757AAD61237BFE8F00FEC112 /* DragAndDrop2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */; };
+		758C6C33238B3147003351F4 /* Cute_Avalanche.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 758C6C32238B3147003351F4 /* Cute_Avalanche.mp3 */; };
 		75F3FC8F237DA285008C1930 /* DrawPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FC8E237DA285008C1930 /* DrawPad.swift */; };
 		75F3FC94237DA33D008C1930 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F3FC93237DA33D008C1930 /* Pencil.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		757AAD5C237BFB2E00FEC112 /* DragAndDRop.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DragAndDRop.storyboard; sourceTree = "<group>"; };
 		757AAD5E237BFB3700FEC112 /* DragAndDrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragAndDrop.swift; sourceTree = "<group>"; };
 		757AAD60237BFE8F00FEC112 /* DragAndDrop2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragAndDrop2.swift; sourceTree = "<group>"; };
+		758C6C32238B3147003351F4 /* Cute_Avalanche.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Cute_Avalanche.mp3; sourceTree = "<group>"; };
 		75F3FC8E237DA285008C1930 /* DrawPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawPad.swift; sourceTree = "<group>"; };
 		75F3FC93237DA33D008C1930 /* Pencil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pencil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -110,6 +112,7 @@
 		75275FAB2387E665001CB148 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				758C6C32238B3147003351F4 /* Cute_Avalanche.mp3 */,
 			);
 			path = Audio;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				7521F248237EA9FA00A6A8B2 /* Path.storyboard in Resources */,
 				7500A24F238AEDBB00A2FD5A /* DrawPad.storyboard in Resources */,
 				665F533E23798AC40012D952 /* LaunchScreen.storyboard in Resources */,
+				758C6C33238B3147003351F4 /* Cute_Avalanche.mp3 in Resources */,
 				757AAD5D237BFB2E00FEC112 /* DragAndDRop.storyboard in Resources */,
 				665F533B23798AC40012D952 /* Assets.xcassets in Resources */,
 				665F533923798AC10012D952 /* Main.storyboard in Resources */,
