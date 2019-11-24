@@ -53,7 +53,7 @@ class Settings : UIViewController{
             self.twoyears.isHidden = false
             self.Scritta.isHighlighted = true
             UIView.animate(withDuration: 2, animations: {
-              
+              self.Scritta.isHighlighted = true
                 self.twoyears.transform = CGAffineTransform(translationX: 320, y: 0)
                  self.threeyears.transform = CGAffineTransform(translationX: -320, y: 0)
                  self.fouryears.transform = CGAffineTransform(translationX: 320, y: 0)

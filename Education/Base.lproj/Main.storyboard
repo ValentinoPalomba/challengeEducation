@@ -21,30 +21,6 @@
                                 <color key="backgroundColor" red="0.99878591299057007" green="0.88394254446029663" blue="0.78429776430130005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99878591299057007" green="0.88580992689561144" blue="0.78854235416703922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-ie-33l">
-                                <rect key="frame" x="-257" y="248" width="294" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="tastomenu-1@4x-8"/>
-                                <connections>
-                                    <segue destination="KyN-wO-Tt7" kind="presentation" modalPresentationStyle="fullScreen" id="TEV-Re-Z5I"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-cB-hHs">
-                                <rect key="frame" x="-257" y="438" width="294" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="nuovoBottone"/>
-                                <connections>
-                                    <segue destination="hWy-Ps-wL3" kind="presentation" modalPresentationStyle="fullScreen" id="yQr-cX-1gq"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
-                                <rect key="frame" x="384" y="339" width="294" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="tastomenu_3anni-1@4x-8"/>
-                                <connections>
-                                    <segue destination="Joc-pf-by1" kind="presentation" modalPresentationStyle="fullScreen" id="1Td-oR-53R"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
                                 <rect key="frame" x="347" y="38" width="35" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,10 +31,34 @@
                                     <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomeappuf1-8" highlightedImage="scritta_età-8" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-Ba-lM4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomeappuf1-8" highlightedImage="scritta_età-8" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-Ba-lM4">
                                 <rect key="frame" x="87" y="-91" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-ie-33l">
+                                <rect key="frame" x="-260" y="196" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastomenu-1@4x-8"/>
+                                <connections>
+                                    <segue destination="KyN-wO-Tt7" kind="presentation" modalPresentationStyle="fullScreen" id="TEV-Re-Z5I"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ab-cB-hHs">
+                                <rect key="frame" x="-260" y="386" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="nuovoBottone"/>
+                                <connections>
+                                    <segue destination="hWy-Ps-wL3" kind="presentation" modalPresentationStyle="fullScreen" id="yQr-cX-1gq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
+                                <rect key="frame" x="381" y="287" width="294" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tastomenu_3anni-1@4x-8"/>
+                                <connections>
+                                    <segue destination="Joc-pf-by1" kind="presentation" modalPresentationStyle="fullScreen" id="1Td-oR-53R"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="e5i-i6-hpq"/>
