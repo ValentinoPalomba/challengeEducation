@@ -89,7 +89,7 @@ class ViewController3: UIViewController {
         motionManager.startGyroUpdates(to: OperationQueue.current!) { (data, error) in
             if let _ = data
             {
-                let x = (data?.rotationRate.x ?? 0.0) * 2.0
+                let x = (data?.rotationRate.x ?? 0.0)
                 let y = (data?.rotationRate.y ?? 0.0)
                 
                 

@@ -126,7 +126,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-Dv-Y3R">
                                 <rect key="frame" x="122" y="678" width="170" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
                                 <connections>
                                     <segue destination="N85-qv-gBL" kind="modal" modalPresentationStyle="fullScreen" id="WRG-Od-bLg"/>
                                 </connections>
@@ -200,7 +200,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-VI-1T1">
                                 <rect key="frame" x="122" y="672" width="170" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
                                 <connections>
                                     <segue destination="OQg-wQ-Cr9" kind="presentation" modalPresentationStyle="fullScreen" id="2ub-gN-tfg"/>
                                 </connections>
@@ -265,8 +265,8 @@
         <image name="beach1 bg_Tavola disegno 1 copia 2" width="4688" height="10151"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="chooseyourlevel_2-8" width="1415" height="419"/>
+        <image name="frecce-8" width="879" height="384"/>
         <image name="manotutorial2-8" width="432" height="444"/>
-        <image name="popup2" width="449" height="358"/>
         <image name="scritta1-8" width="1053" height="335"/>
         <image name="scritta2-8" width="1054" height="301"/>
         <image name="sfondomenu_4anni@4x-8" width="1677" height="3592"/>

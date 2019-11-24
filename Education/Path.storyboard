@@ -79,9 +79,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31X-2I-pW4">
-                                <rect key="frame" x="130" y="334" width="172" height="154"/>
+                                <rect key="frame" x="181" y="458" width="156" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Risorsa 21"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
                                 <connections>
                                     <segue destination="RLp-0M-kFW" kind="presentation" modalPresentationStyle="fullScreen" id="syY-Ke-MKQ"/>
                                 </connections>
@@ -90,12 +90,17 @@
                                 <rect key="frame" x="195" y="60" width="58" height="83"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scritta3-8" translatesAutoresizingMaskIntoConstraints="NO" id="lgo-Sj-XeD">
+                                <rect key="frame" x="64" y="126" width="287" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="K84-Zy-mlM"/>
                     </view>
                     <connections>
                         <outlet property="Background" destination="aHQ-ky-n1u" id="XpG-uR-j7H"/>
+                        <outlet property="Great" destination="lgo-Sj-XeD" id="HH4-xR-rOk"/>
                         <outlet property="Green" destination="31X-2I-pW4" id="UI3-io-K3z"/>
                         <outlet property="LetteraA" destination="rZM-a5-AWN" id="Q8L-FA-BOc"/>
                         <outlet property="LetteraB" destination="o7c-vb-OE3" id="AIl-pm-pXR"/>
@@ -124,11 +129,12 @@
         <image name="A" width="211" height="297"/>
         <image name="PALLA2" width="153" height="156"/>
         <image name="Risorsa 16" width="211" height="263"/>
-        <image name="Risorsa 21" width="449" height="359"/>
         <image name="Risorsa 22" width="1055" height="1001"/>
         <image name="Risorsa 23" width="1123" height="2436"/>
         <image name="Risorsa 4" width="140" height="139"/>
+        <image name="frecce-8" width="879" height="384"/>
         <image name="manotutorial2-8" width="432" height="444"/>
+        <image name="scritta3-8" width="689" height="315"/>
         <image name="sfondomenu_4anni@4x-8" width="1677" height="3592"/>
         <image name="tastorosso.2@4x-8" width="176" height="177"/>
     </resources>

@@ -21,6 +21,7 @@ class FollowPath : UIViewController{
     @IBOutlet weak var tempImageView: UIImageView!
     @IBOutlet weak var Mano: UIImageView!
     
+    @IBOutlet weak var Great: UIImageView!
     @IBOutlet weak var Palla: UIImageView!
     
     @IBOutlet weak var Green: UIButton!
@@ -34,6 +35,7 @@ class FollowPath : UIViewController{
         Background.isHidden = true
         PopUp.isHidden = true
         Green.isHidden = true
+        Great.isHidden = true
     }
     
    override func viewWillAppear(_ animated: Bool) {
@@ -111,6 +113,7 @@ class FollowPath : UIViewController{
                 Background.isHidden = false
                 PopUp.isHidden = false
                 Green.isHidden = false
+                Great.isHidden = false
             }
         }
         
