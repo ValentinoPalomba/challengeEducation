@@ -19,7 +19,7 @@ class Settings : UIViewController{
     
     @IBAction func settingsButton(_ sender: Any) {
         
-        let alertController = UIAlertController (title: "Activate Guided Access", message: "To prevent your child from exiting the app please, go to Settings -> General -> Accesibilty -> Guided Access", preferredStyle: .alert)
+        let alertController = UIAlertController (title: "Activate Guided Access", message: "To prevent your child from exiting the app please, go to Settings -> Accesibilty -> Guided Access", preferredStyle: .alert)
         
         let settingsAction = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
             
@@ -44,14 +44,16 @@ class Settings : UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        UIView.animate(withDuration: 3, animations: {
-            self.Scritta.transform = CGAffineTransform(translationX: 0, y: 100)
+        UIView.animate(withDuration: 2, animations: {
+            self.Scritta.transform = CGAffineTransform(translationX: 0, y: 130)
         }, completion: { _ in
             
             self.threeyears.isHidden = false
             self.fouryears.isHidden = false
             self.twoyears.isHidden = false
-            UIView.animate(withDuration: 3, animations: {
+            self.Scritta.isHighlighted = true
+            UIView.animate(withDuration: 2, animations: {
+              
                 self.twoyears.transform = CGAffineTransform(translationX: 320, y: 0)
                  self.threeyears.transform = CGAffineTransform(translationX: -320, y: 0)
                  self.fouryears.transform = CGAffineTransform(translationX: 320, y: 0)
@@ -60,28 +62,7 @@ class Settings : UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        if first == false   {
-            let alertController1 = UIAlertController (title: "Activate Guided Access", message: "To prevent your child from exiting the app please, go to Settings -> General -> Accesibilty -> Guided Access", preferredStyle: .alert)
-            
-            let settingsAction1 = UIAlertAction(title: "Settings", style: .default) { (_) -> Void in
-                
-                guard let settingsUrl1 = URL(string: UIApplication.openSettingsURLString) else {
-                    return
-                }
-                
-                if UIApplication.shared.canOpenURL(settingsUrl1) {
-                    UIApplication.shared.open(settingsUrl1, completionHandler: { (success) in
-                        print("Settings opened: \(success)") // Prints true
-                    })
-                }
-            }
-            alertController1.addAction(settingsAction1)
-            let cancelAction1 = UIAlertAction(title: "Cancel", style: .default, handler: nil)
-            alertController1.addAction(cancelAction1)
-            
-            present(alertController1, animated: true, completion: nil)
-            first = true
-        }
+       
     }
 }
 

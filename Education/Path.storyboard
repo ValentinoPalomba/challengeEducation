@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--DragAndDRop-->
+        <!--second-->
         <scene sceneID="bkP-Ca-JMz">
             <objects>
-                <viewControllerPlaceholder storyboardName="DragAndDRop" id="ZKO-2u-Taq" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="DragAndDRop" referencedIdentifier="second" id="ZKO-2u-Taq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKR-Wd-B1m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-622" y="10"/>
@@ -40,25 +40,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="A" translatesAutoresizingMaskIntoConstraints="NO" id="rZM-a5-AWN">
-                                <rect key="frame" x="273" y="193" width="85" height="91"/>
+                                <rect key="frame" x="60" y="400" width="85" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 4" translatesAutoresizingMaskIntoConstraints="NO" id="o7c-vb-OE3">
-                                <rect key="frame" x="55" y="403" width="57" height="47"/>
+                                <rect key="frame" x="280" y="600" width="57" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Risorsa 16" translatesAutoresizingMaskIntoConstraints="NO" id="OKe-W8-EtC">
-                                <rect key="frame" x="273" y="573" width="85" height="91"/>
+                                <rect key="frame" x="270" y="220" width="85" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jaf-Tg-Q4j">
                                 <rect key="frame" x="20" y="35" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="chevron.left" catalog="system">
+                                <state key="normal" image="tastorosso.2@4x-8">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="50"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZKO-2u-Taq" kind="presentation" modalPresentationStyle="fullScreen" id="Phd-nC-fjA"/>
+                                    <segue destination="ZKO-2u-Taq" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Phd-nC-fjA"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kM-Wd-BdN">
@@ -123,7 +123,7 @@
         <image name="Risorsa 22" width="1055" height="1001"/>
         <image name="Risorsa 23" width="1123" height="2436"/>
         <image name="Risorsa 4" width="140" height="139"/>
-        <image name="chevron.left" catalog="system" width="48" height="64"/>
         <image name="sfondomenu_4anni@4x-8" width="1677" height="3592"/>
+        <image name="tastorosso.2@4x-8" width="176" height="177"/>
     </resources>
 </document>

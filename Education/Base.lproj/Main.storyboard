@@ -15,19 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
-                                <rect key="frame" x="325" y="31" width="69" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nuovomenu_corretto@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-Wn-cMr">
+                            <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondomenu-8" translatesAutoresizingMaskIntoConstraints="NO" id="fQl-Wn-cMr">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99878591299057007" green="0.88394254446029663" blue="0.78429776430130005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.99878591299057007" green="0.88580992689561144" blue="0.78854235416703922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-ie-33l">
                                 <rect key="frame" x="-257" y="248" width="294" height="134"/>
@@ -45,10 +37,6 @@
                                     <segue destination="hWy-Ps-wL3" kind="presentation" modalPresentationStyle="fullScreen" id="yQr-cX-1gq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lavagna_3@4x-8" translatesAutoresizingMaskIntoConstraints="NO" id="E15-GD-x2V">
-                                <rect key="frame" x="87" y="-92" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
                                 <rect key="frame" x="384" y="339" width="294" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -57,12 +45,26 @@
                                     <segue destination="Joc-pf-by1" kind="presentation" modalPresentationStyle="fullScreen" id="1Td-oR-53R"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
+                                <rect key="frame" x="347" y="38" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="PinClipart.com_setting-clipart_654822">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomeappuf1-8" highlightedImage="scritta_età-8" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-Ba-lM4">
+                                <rect key="frame" x="87" y="-91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="e5i-i6-hpq"/>
                     </view>
                     <connections>
-                        <outlet property="Scritta" destination="E15-GD-x2V" id="9T0-rm-5eQ"/>
+                        <outlet property="Scritta" destination="yWH-Ba-lM4" id="Iup-1l-s3d"/>
                         <outlet property="fouryears" destination="2ab-cB-hHs" id="nfT-SI-yRj"/>
                         <outlet property="threeyears" destination="qvJ-aY-Vaa" id="x4y-vt-4NA"/>
                         <outlet property="twoyears" destination="jrg-ie-33l" id="W7x-NV-vzG"/>
@@ -98,9 +100,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lavagna_3@4x-8" width="1888" height="1436"/>
+        <image name="PinClipart.com_setting-clipart_654822" width="720" height="720"/>
+        <image name="nomeappuf1-8" width="661" height="404"/>
         <image name="nuovoBottone" width="1758" height="768"/>
-        <image name="nuovomenu_corretto@4x-8" width="4512" height="10508"/>
+        <image name="scritta_età-8" width="1013" height="401"/>
+        <image name="sfondomenu-8" width="1128" height="2445"/>
         <image name="tastomenu-1@4x-8" width="3516" height="1536"/>
         <image name="tastomenu_3anni-1@4x-8" width="3516" height="1536"/>
     </resources>

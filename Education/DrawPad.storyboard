@@ -145,7 +145,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" image="chevron.left" catalog="system"/>
                                 <connections>
-                                    <segue destination="4ee-yu-LqQ" kind="presentation" modalPresentationStyle="fullScreen" id="4L9-15-CVP"/>
+                                    <segue destination="4ee-yu-LqQ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="4L9-15-CVP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5J-cy-tJm">
@@ -169,11 +169,19 @@
                                     <action selector="pencilPressed:" destination="bnj-k7-SPu" eventType="touchUpInside" id="0Nk-mh-mRf"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Draw Togheter!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pn9-5X-my2">
+                                <rect key="frame" x="99" y="167" width="216" height="412"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="54"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="jRo-lx-Yhq"/>
                     </view>
                     <connections>
+                        <outlet property="Label" destination="Pn9-5X-my2" id="bYd-Hu-XaX"/>
                         <outlet property="mainImageView" destination="L06-IZ-4jf" id="2kF-W3-1Le"/>
                         <outlet property="tempImageView" destination="u6b-9L-ok0" id="cxU-Df-K3W"/>
                     </connections>

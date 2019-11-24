@@ -68,9 +68,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kun-cX-0gg">
-                                <rect key="frame" x="146" y="381" width="136" height="132"/>
+                                <rect key="frame" x="198" y="512" width="162" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
                                 <connections>
                                     <segue destination="c4x-1Q-yo5" kind="presentation" modalPresentationStyle="fullScreen" id="yxf-lA-Di4"/>
                                 </connections>
@@ -80,9 +80,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastorosso.2@4x-8"/>
                                 <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="rKY-Qz-n2d"/>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="rKY-Qz-n2d"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scritta2-8" translatesAutoresizingMaskIntoConstraints="NO" id="q7W-AK-ztN">
+                                <rect key="frame" x="71" y="104" width="273" height="142"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Gc1-8g-DJi"/>
@@ -103,6 +107,7 @@
                         <outlet property="LetteraTSotto" destination="osQ-qD-AoO" id="RLv-tA-F6R"/>
                         <outlet property="Palla" destination="Dat-gJ-aOu" id="pem-HY-5I7"/>
                         <outlet property="PopUP" destination="1c1-Od-8y7" id="jW1-3J-7Se"/>
+                        <outlet property="Well" destination="q7W-AK-ztN" id="o0K-sL-QDN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ahg-bP-DDB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,22 +182,26 @@
                                 <rect key="frame" x="0.0" y="-60" width="414" height="1014"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0N-mt-bzX">
-                                <rect key="frame" x="143" y="394" width="162" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="popup2"/>
-                                <connections>
-                                    <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPK-m9-hT2">
                                 <rect key="frame" x="20" y="44" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastorosso.2@4x-8"/>
                                 <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="K5Z-Hg-6Wg"/>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="K5Z-Hg-6Wg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0N-mt-bzX">
+                                <rect key="frame" x="198" y="512" width="162" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
+                                <connections>
+                                    <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="V9M-xe-zAr"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scritta1-8" translatesAutoresizingMaskIntoConstraints="NO" id="XZP-ij-3Ae">
+                                <rect key="frame" x="53" y="113" width="307" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -200,6 +209,7 @@
                     <connections>
                         <outlet property="Airplane" destination="Ng1-Bv-tg5" id="RhS-1G-c8z"/>
                         <outlet property="Back" destination="vPK-m9-hT2" id="ZOb-gF-ILf"/>
+                        <outlet property="Fantastic" destination="XZP-ij-3Ae" id="ddS-KF-Su3"/>
                         <outlet property="Green" destination="U0N-mt-bzX" id="Y3H-4l-nFQ"/>
                         <outlet property="LetteraA" destination="DtI-NL-baz" id="RK7-Be-XW4"/>
                         <outlet property="LetteraASotto" destination="Mjm-0w-StX" id="BVO-r1-ZY6"/>
@@ -304,20 +314,24 @@
                                 <rect key="frame" x="-29" y="249" width="472" height="344"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Bi-opc">
-                                <rect key="frame" x="130" y="341" width="158" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Risorsa 21"/>
-                                <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="xZR-d3-NT9"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwS-3h-v2v">
                                 <rect key="frame" x="20" y="22" width="44" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastorosso.2@4x-8"/>
                                 <connections>
-                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" id="nAN-tW-qBj"/>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="nAN-tW-qBj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="scritta3-8" translatesAutoresizingMaskIntoConstraints="NO" id="9gq-qg-xF0">
+                                <rect key="frame" x="87" y="95" width="266" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Bi-opc">
+                                <rect key="frame" x="199" y="494" width="162" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="frecce-8"/>
+                                <connections>
+                                    <segue destination="sWh-kF-mBm" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xZR-d3-NT9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -337,6 +351,7 @@
                         <outlet property="Barrier8" destination="A2y-tR-8iV" id="5DI-Qn-XHI"/>
                         <outlet property="Blur" destination="CGa-as-8Ph" id="6Wu-A2-9gF"/>
                         <outlet property="Finish" destination="tC6-z9-kgV" id="O9j-vz-laf"/>
+                        <outlet property="Great" destination="9gq-qg-xF0" id="9es-Je-1vh"/>
                         <outlet property="Green" destination="Vaa-Bi-opc" id="Jfu-my-EdG"/>
                         <outlet property="LetteraA" destination="OMf-0V-ovL" id="DlM-L6-Rpt"/>
                         <outlet property="LetteraASotto" destination="EVd-Zg-mke" id="PkT-0D-cZk"/>
@@ -372,37 +387,22 @@
                                 <rect key="frame" x="0.0" y="-33" width="414" height="929"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQX-FR-ZUf">
-                                <rect key="frame" x="168" y="297" width="79" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="5gioco2@4x-8"/>
-                                <connections>
-                                    <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="wMd-eb-s42"/>
-                                </connections>
-                            </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xx5-50-05e">
-                                <rect key="frame" x="20" y="296" width="79" height="64"/>
+                                <rect key="frame" x="20" y="265" width="123" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="5gioco1@4x-8"/>
+                                <state key="normal" title="Button" image="tastolivello1_1-8"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="DLV-Ft-jMo"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SV5-f3-ZZg">
-                                <rect key="frame" x="315" y="297" width="79" height="64"/>
+                                <rect key="frame" x="271" y="265" width="123" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="5gioco3@4x-8"/>
+                                <state key="normal" title="Button" image="tastolivello1_3-8"/>
                                 <connections>
                                     <segue destination="c4x-1Q-yo5" kind="presentation" modalPresentationStyle="fullScreen" id="wPG-FT-hAx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Choose Your Level!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qea-Is-wJ8">
-                                <rect key="frame" x="15" y="159" width="384" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="47"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m6-6p-H6A">
                                 <rect key="frame" x="20" y="44" width="38" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -415,6 +415,18 @@
                                     <segue destination="anm-mJ-3vs" kind="presentation" modalPresentationStyle="fullScreen" id="LdK-5J-I5G"/>
                                 </connections>
                             </button>
+                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQX-FR-ZUf">
+                                <rect key="frame" x="146" y="265" width="123" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="tastolivello1_2-8"/>
+                                <connections>
+                                    <segue destination="rQh-7L-VbS" kind="presentation" modalPresentationStyle="fullScreen" id="wMd-eb-s42"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chooseyourlevel_2-8" translatesAutoresizingMaskIntoConstraints="NO" id="j3y-Zk-WbQ">
+                                <rect key="frame" x="61" y="97" width="293" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="rLn-UH-ccj"/>
@@ -426,9 +438,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="5gioco1@4x-8" width="709" height="708"/>
-        <image name="5gioco2@4x-8" width="708" height="708"/>
-        <image name="5gioco3@4x-8" width="708" height="708"/>
         <image name="A" width="211" height="297"/>
         <image name="B" width="211" height="297"/>
         <image name="BG" width="4688" height="10150"/>
@@ -448,22 +457,28 @@
         <image name="Risorsa 2" width="142" height="143"/>
         <image name="Risorsa 2-2" width="212" height="298"/>
         <image name="Risorsa 20" width="348" height="181"/>
-        <image name="Risorsa 21" width="449" height="359"/>
         <image name="Risorsa 22" width="1055" height="1001"/>
         <image name="Risorsa 23" width="1123" height="2436"/>
         <image name="Risorsa 4" width="140" height="139"/>
         <image name="T" width="202" height="297"/>
         <image name="chevron.left" catalog="system" width="48" height="64"/>
+        <image name="chooseyourlevel_2-8" width="1415" height="419"/>
+        <image name="frecce-8" width="879" height="384"/>
         <image name="mare bg-5" width="1125" height="2436"/>
         <image name="o" width="216" height="297"/>
-        <image name="popup2" width="449" height="358"/>
+        <image name="scritta1-8" width="1053" height="335"/>
+        <image name="scritta2-8" width="1054" height="301"/>
+        <image name="scritta3-8" width="689" height="315"/>
         <image name="sfondomenu_5anni@4x-8" width="2475" height="3689"/>
+        <image name="tastolivello1_1-8" width="379" height="384"/>
+        <image name="tastolivello1_2-8" width="379" height="384"/>
+        <image name="tastolivello1_3-8" width="379" height="384"/>
         <image name="tastorosso.2@4x-8" width="176" height="177"/>
         <image name="verchetella" width="381" height="380"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K5Z-Hg-6Wg"/>
-        <segue reference="wPG-FT-hAx"/>
-        <segue reference="wMd-eb-s42"/>
+        <segue reference="nAN-tW-qBj"/>
+        <segue reference="yxf-lA-Di4"/>
+        <segue reference="V9M-xe-zAr"/>
     </inferredMetricsTieBreakers>
 </document>

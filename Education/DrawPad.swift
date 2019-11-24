@@ -19,11 +19,13 @@ class DrawPad: UIViewController {
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var tempImageView: UIImageView!
     
+    @IBOutlet weak var Label: UILabel!
     
     
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        Label.isHidden = true
         guard let touch = touches.first else {
             return
         }

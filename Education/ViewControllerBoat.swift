@@ -43,6 +43,7 @@ class ViewController3: UIViewController {
     @IBOutlet weak var Barrier7: UIImageView!
     
 
+    @IBOutlet weak var Great: UIImageView!
     
     
     
@@ -60,7 +61,7 @@ class ViewController3: UIViewController {
         Green.isEnabled = false
         PopUP.isHidden = true
         
-        
+        Great.isHidden = true
        
         
         animator = UIDynamicAnimator(referenceView: view)
@@ -119,6 +120,7 @@ class ViewController3: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
+                self.Great.isHidden = false
             }
             
         }

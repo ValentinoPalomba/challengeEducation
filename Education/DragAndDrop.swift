@@ -18,12 +18,16 @@ class DragAndDrop1: UIViewController {
     @IBOutlet weak var Immagine: UIImageView!
     @IBOutlet weak var Button: UIButton!
     
+    @IBOutlet weak var Fantastic: UIImageView!
+    @IBOutlet weak var Background: UIImageView!
     @IBOutlet weak var Back: UIButton!
     override func viewDidLoad() {
         Button.isHidden = true
         Button.isEnabled = false
         Back.isHidden = false
         Back.isEnabled = true
+        Background.isHidden = true
+        Fantastic.isHidden = true
     }
     
     
@@ -62,7 +66,8 @@ class DragAndDrop1: UIViewController {
             if Immagine.isHighlighted == true && TraingoloSotto.isHighlighted == true && CerchioSotto.isHighlighted == true {
                 Button.isHidden = false
                 Button.isEnabled = true
-               
+                Fantastic.isHidden = false
+                Background.isHidden = false
             }
         }
         

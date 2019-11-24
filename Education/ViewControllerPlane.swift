@@ -17,6 +17,7 @@ class ViewController2: UIViewController {
     var animator : UIDynamicAnimator!
     var counter : Int!
     
+    @IBOutlet weak var Well: UIImageView!
     @IBOutlet weak var LetteraB: UIImageView!
     @IBOutlet weak var LetteraO: UIImageView!
     @IBOutlet weak var LetterA: UIImageView!
@@ -47,7 +48,7 @@ class ViewController2: UIViewController {
         LetteraTSotto.isHidden = true
         Green.isHidden = true
         Green.isEnabled = false
-        
+        Well.isHidden = true
         counter = 0
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [Palla])
@@ -110,6 +111,7 @@ class ViewController2: UIViewController {
                 self.PopUP.isHidden = false
                 self.Green.isHidden = false
                 self.Green.isEnabled = true
+                self.Well.isHidden = false
             }
             
         }

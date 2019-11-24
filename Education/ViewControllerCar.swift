@@ -14,6 +14,7 @@ class ViewController5years: UIViewController {
     var collision : UICollisionBehavior!
     var animator : UIDynamicAnimator!
     
+    @IBOutlet weak var Fantastic: UIImageView!
     
     @IBOutlet weak var Green: UIButton!      /* DIchiarazioni Principali delle varie immagini e bottoni */
     @IBOutlet weak var LetteraA: UIImageView!
@@ -48,7 +49,7 @@ class ViewController5years: UIViewController {
         self.LetteraESotto.isHidden = true
         self.Green.isEnabled = false
         self.Green.isHidden = true
-        
+        Fantastic.isHidden = true
         
         /* Descrive il comportamento di gravità e collisioni */
         
@@ -115,6 +116,7 @@ class ViewController5years: UIViewController {
                 self.PopuP.isHidden = false
                 self.Green.isEnabled = true
                 self.Green.isHidden = false
+                self.Fantastic.isHidden = false
                 
             }
             
