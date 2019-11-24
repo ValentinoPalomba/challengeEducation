@@ -93,19 +93,25 @@ class ViewController2: UIViewController {
                 
                 
             }
-            if self.Palla.frame.intersects(self.LetterA.frame) == true {
+            if self.Palla.frame.intersects(self.LetterA.frame) == true && self.LetterA.isHidden == false{
+                let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.success)
                 self.LetterA.isHidden = true
                 self.LetteraASotto.isHidden = false
             }
-            if self.Palla.frame.intersects(self.LetteraB.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraB.frame) == true && self.LetteraB.isHidden == false{
+                let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.success)
                 self.LetteraB.isHidden = true
                 self.LetteraBSotto.isHidden = false
             }
-            if self.Palla.frame.intersects(self.LetteraO.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraO.frame) == true && self.LetteraO.isHidden == false{
+                let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.success)
                 self.LetteraO.isHidden = true
                 self.LetteraOSotto.isHidden = false
             }
-            if self.Palla.frame.intersects(self.LetteraT.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraT.frame) == true && self.LetteraT.isHidden == false {
                 self.LetteraT.isHidden = true
                 self.LetteraTSotto.isHidden = false
                 self.PopUP.isHidden = false

@@ -19,6 +19,7 @@ class FollowPath : UIViewController{
     var swiped = false
     @IBOutlet weak var mainImageView: UIImageView!
     @IBOutlet weak var tempImageView: UIImageView!
+    @IBOutlet weak var Mano: UIImageView!
     
     @IBOutlet weak var Palla: UIImageView!
     
@@ -35,10 +36,15 @@ class FollowPath : UIViewController{
         Green.isHidden = true
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        
-    }
-    
+   override func viewWillAppear(_ animated: Bool) {
+       let x = Mano.frame.origin.x
+        let y = Mano.frame.origin.y
+       UIView.animate(withDuration: 3, delay: 0, options: .repeat, animations: {
+           self.Mano.transform = CGAffineTransform(translationX: 30, y: 100)
+       }, completion: {_ in
+           self.Mano.frame = CGRect(x: x, y: y, width: self.Mano.frame.width, height: self.Mano.frame.height)
+       })
+   }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
@@ -80,7 +86,8 @@ class FollowPath : UIViewController{
         guard let touch = touches.first else {
             return
         }
-        
+        Mano.isHidden = true
+        Mano.layer.removeAllAnimations()
         
         // 6
         swiped = true
@@ -130,7 +137,7 @@ class FollowPath : UIViewController{
     
     @IBAction func resetPressed(_ sender: Any) {
         mainImageView.image = nil
-        mainImageView.image = UIImage(named: "sfondomenu_4anni@4x-8")
+        
     }
     
     

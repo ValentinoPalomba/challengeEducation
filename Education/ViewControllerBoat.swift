@@ -98,20 +98,25 @@ class ViewController3: UIViewController {
             }
             
             
-            if self.Palla.frame.intersects(self.LetteraC.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraC.frame) == true && self.LetteraC.isHidden == false {
                 //                self.playSound(NameSong: "LetteraC.mp3")
-               
+               let generator = UINotificationFeedbackGenerator()
+                          generator.notificationOccurred(.success)
                 self.LetteraCSotto.isHidden = false
                 self.LetteraC.isHidden = true
             }
             
-            if self.Palla.frame.intersects(self.LetteraA.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraA.frame) == true && self.LetteraA.isHidden == false{
                 //                self.playSound(NameSong: "LetteraA.mp3")
+                let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.success)
                 self.LetteraASotto.isHidden = false
                 self.LetteraA.isHidden = true
             }
-            if self.Palla.frame.intersects(self.LetteraR.frame) == true {
+            if self.Palla.frame.intersects(self.LetteraR.frame) == true && self.LetteraR.isHidden == false {
                 //                self.playSound(NameSong: "LetteraR.mp3")
+                let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.success)
                 self.LetteraRSotto.isHidden = false
                 self.LetteraR.isHidden = true
             }
