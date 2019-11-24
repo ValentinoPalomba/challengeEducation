@@ -63,6 +63,23 @@ class DragAndDrop2 : UIViewController{
                        self.CerchioSotto.stopAnimating()
                })
            }
+            if (Quadrato.frame.contains(CerchioSotto.frame) || Quadrato.frame.contains(TraingoloSotto.frame)){
+                           let generator = UINotificationFeedbackGenerator()
+                           generator.notificationOccurred(.error)
+
+                           }
+                       if (Cerchio.frame.contains(Immagine.frame) || Cerchio.frame.contains(TraingoloSotto.frame)){
+                       let generator = UINotificationFeedbackGenerator()
+                       generator.notificationOccurred(.error)
+
+                       }
+                       if (Triangolo.frame.contains(CerchioSotto.frame) || Triangolo.frame.contains(Immagine.frame)){
+                       let generator = UINotificationFeedbackGenerator()
+                       generator.notificationOccurred(.error)
+
+                       }
+            
+            
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)
@@ -79,7 +96,7 @@ class DragAndDrop2 : UIViewController{
     
     func confronto(Quadrato : UIImageView, Immagine : UIImageView){
         if Quadrato.frame.contains(Immagine.frame){
-            
+          
             Immagine.frame = Quadrato.frame
             Immagine.center = Quadrato.center
             Immagine.isHighlighted = true

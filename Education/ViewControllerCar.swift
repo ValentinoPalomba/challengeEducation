@@ -82,30 +82,40 @@ class ViewController5years: UIViewController {
                 
             }
             
-            if self.Airplane.frame.intersects(self.LetteraA.frame) == true {
+            if self.Airplane.frame.intersects(self.LetteraA.frame) == true && self.LetteraA.isHidden == false {
                 self.playSound(NameSong: "LetteraA")
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 self.LetteraASotto.isHidden = false
                 self.LetteraA.isHidden = true
             }
             
-            if self.Airplane.frame.intersects(self.LetteraL.frame) == true {
+            if self.Airplane.frame.intersects(self.LetteraL.frame) == true && self.LetteraL.isHidden == false {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 self.playSound(NameSong: "LetteraL")
                 self.LetteraLSotto.isHidden = false
                 self.LetteraL.isHidden = true
             }
             
-            if self.Airplane.frame.intersects(self.LetteraP.frame) == true {
+            if self.Airplane.frame.intersects(self.LetteraP.frame) == true && self.LetteraP.isHidden == false {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 self.playSound(NameSong: "LetteraP")
                 self.LetteraPSotto.isHidden = false
                 self.LetteraP.isHidden = true
             }
-            if self.Airplane.frame.intersects(self.LetteraN.frame) == true {
+            if self.Airplane.frame.intersects(self.LetteraN.frame) == true && self.LetteraN.isHidden == false {
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 self.playSound(NameSong: "LetteraN")
                 self.LetteraNSotto.isHidden = false
                 self.LetteraN.isHidden = true
             }
             
-            if self.Airplane.frame.intersects(self.LetteraE.frame) == true {
+            if self.Airplane.frame.intersects(self.LetteraE.frame) == true && self.LetteraE.isHidden == false{
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.success)
                 self.LetteraESotto.isHidden = false
                 self.LetteraE.isHidden = true
                 

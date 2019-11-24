@@ -21,20 +21,6 @@
                                 <color key="backgroundColor" red="0.99878591299057007" green="0.88394254446029663" blue="0.78429776430130005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" red="0.99878591299057007" green="0.88580992689561144" blue="0.78854235416703922" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
-                                <rect key="frame" x="347" y="38" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="PinClipart.com_setting-clipart_654822">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomeappuf1-8" highlightedImage="scritta_età-8" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-Ba-lM4">
-                                <rect key="frame" x="87" y="-91" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrg-ie-33l">
                                 <rect key="frame" x="-260" y="196" width="294" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -51,8 +37,22 @@
                                     <segue destination="hWy-Ps-wL3" kind="presentation" modalPresentationStyle="fullScreen" id="yQr-cX-1gq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-B1-5cc">
+                                <rect key="frame" x="347" y="38" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="PinClipart.com_setting-clipart_654822">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsButton:" destination="Bfl-JZ-QhL" eventType="touchUpInside" id="HHe-Dl-M8J"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nomeappuf1-8" highlightedImage="scritta_età-8" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yWH-Ba-lM4">
+                                <rect key="frame" x="87" y="-91" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qvJ-aY-Vaa">
-                                <rect key="frame" x="381" y="287" width="294" height="134"/>
+                                <rect key="frame" x="381" y="291" width="294" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="tastomenu_3anni-1@4x-8"/>
                                 <connections>

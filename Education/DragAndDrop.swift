@@ -71,9 +71,27 @@ class DragAndDrop1: UIViewController {
                 UIView.animate(withDuration: 0.2, animations: {
                     self.TraingoloSotto.center = CGPoint(x: position.x, y: position.y)
                     
-                        self.CerchioSotto.stopAnimating()
+                         self.Immagine.isUserInteractionEnabled = false
+                    self.CerchioSotto.isUserInteractionEnabled = false
                 })
             }
+        
+            if (Quadrato.frame.contains(CerchioSotto.frame) || Quadrato.frame.contains(TraingoloSotto.frame)){
+                let generator = UINotificationFeedbackGenerator()
+                generator.notificationOccurred(.error)
+
+                }
+            if (Cerchio.frame.contains(Immagine.frame) || Cerchio.frame.contains(TraingoloSotto.frame)){
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.error)
+
+            }
+            if (Triangolo.frame.contains(CerchioSotto.frame) || Triangolo.frame.contains(Immagine.frame)){
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.error)
+
+            }
+         
             confronto(Quadrato: Quadrato, Immagine: Immagine)
             confronto(Quadrato: Triangolo, Immagine: TraingoloSotto)
             confronto(Quadrato: Cerchio, Immagine: CerchioSotto)
